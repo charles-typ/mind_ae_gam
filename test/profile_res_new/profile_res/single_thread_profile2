@@ -1,0 +1,3084 @@
+8589934592 4 1.000000 1 1
+Num Nodes: 5, Num Threads: 1
+Currently configuration is: master: 10.10.10.201:1231, worker: 10.10.10.201:1234, is_master: true, size to allocate: 1717986918
+Size to allocate: 6442450944
+Start the allocator here !!!!!!!!!
+[13797] 03 Feb 15:03:18.406 - [worker.cc:444-SyncMaster()] found one CacheOnly instance with wid = 2
+[13797] 03 Feb 15:03:18.406 - [worker.cc:122-Worker()] LRU eviction is enabled, max cache lines = 1572864, reserved mem size = 6442450944, cache_percentage = 1.000000, block_size = 4096
+End the allocator here !!!!!!!!!
+Waiting for all the nodes !!!!!!!!!
+Putting 10737418242, 2
+Put done
+Gettting 10737418241
+Get done 
+Gettting 10737418242
+Get done 
+Gettting 10737418243
+Get done 
+Gettting 10737418244
+Get done 
+Gettting 10737418245
+Get done 
+start ts is: 1608309204356442
+allocate is 13842298684 ns
+Pass[0] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 20104000 logs
+running trace...
+args has len: 20104000
+Allocator created in 120432 ns
+[13838] 03 Feb 15:03:49.412 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+0	0	4254	12627942	114	7474820	357	745
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+0	0	2441838	1630319790	245264	1220599609	1523829	3670837
+done in 9325799981 ns, fence time is 20615, thread: 0, pass: 0
+total run time is 9325799981 ns, thread: 0, pass: 0
+average read latency is 315 ns, thread: 0, pass: 0
+average write latency is 372 ns, thread: 0, pass: 0
+All nodes synced in 30004027172 ns
+Pass[1] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 6740000 logs
+running trace...
+args has len: 6740000
+Allocator created in 64321 ns
+[14028] 03 Feb 15:04:25.292 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+29452	0	259487	16726301	127121	9785758	149244	26097
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+9582237	0	140373692	2235505757	167442939	1630300115	267496418	54678780
+done in 5640407444 ns, fence time is 27386, thread: 0, pass: 1
+total run time is 14966207425 ns, thread: 0, pass: 1
+average read latency is 904 ns, thread: 0, pass: 1
+average write latency is 479 ns, thread: 0, pass: 1
+All nodes synced in 16830493491 ns
+Pass[2] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 48570 ns
+[14062] 03 Feb 15:04:42.289 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+29452	0	259487	16727026	127121	9786032	149245	26097
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+9582237	0	140373692	2235849969	167442939	1630448813	267518808	54678780
+done in 3883741 ns, fence time is 40897, thread: 0, pass: 2
+total run time is 14970091166 ns, thread: 0, pass: 2
+average read latency is 1192 ns, thread: 0, pass: 2
+average write latency is 1305 ns, thread: 0, pass: 2
+All nodes synced in 17452867546 ns
+Pass[3] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 2380000 logs
+running trace...
+args has len: 2380000
+Allocator created in 51303 ns
+[14090] 03 Feb 15:05:01.249 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+30304	0	269411	18208173	139741	10660861	158917	26976
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+9916509	0	146480722	2433569588	184878487	1777636607	286292213	56579683
+done in 1332712185 ns, fence time is 20445, thread: 0, pass: 3
+total run time is 16302803351 ns, thread: 0, pass: 3
+average read latency is 440 ns, thread: 0, pass: 3
+average write latency is 401 ns, thread: 0, pass: 3
+All nodes synced in 12850672796 ns
+Pass[4] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 34216000 logs
+running trace...
+args has len: 34216000
+Allocator created in 47708 ns
+[14112] 03 Feb 15:05:32.784 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+60547	0	509724	39745303	388599	22807343	391822	47296
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+20022091	0	285367822	5281771756	509629277	3740174506	705056057	95455624
+done in 18349260881 ns, fence time is 25060, thread: 0, pass: 4
+total run time is 34652064232 ns, thread: 0, pass: 4
+average read latency is 499 ns, thread: 0, pass: 4
+average write latency is 391 ns, thread: 0, pass: 4
+All nodes synced in 292296 ns
+Pass[5] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 35709000 logs
+running trace...
+args has len: 35709000
+Allocator created in 49638 ns
+[14141] 03 Feb 15:05:53.640 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+72521	0	744376	62177763	738577	35383129	708776	69107
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+25436772	0	427147470	8300187821	958138865	5784399774	1260108462	134408773
+done in 20451017899 ns, fence time is 24866, thread: 0, pass: 5
+total run time is 55103082131 ns, thread: 0, pass: 5
+average read latency is 553 ns, thread: 0, pass: 5
+average write latency is 400 ns, thread: 0, pass: 5
+All nodes synced in 277264 ns
+Pass[6] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 31316000 logs
+running trace...
+args has len: 31316000
+Allocator created in 45909 ns
+[14176] 03 Feb 15:06:13.477 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+198598	0	1429336	81594351	1064741	46494445	994082	119630
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+56688722	0	799268406	10990583196	1378752742	7678956280	1774487939	236277055
+done in 19440890733 ns, fence time is 24234, thread: 0, pass: 6
+total run time is 74543972864 ns, thread: 0, pass: 6
+average read latency is 602 ns, thread: 0, pass: 6
+average write latency is 420 ns, thread: 0, pass: 6
+All nodes synced in 803422000 ns
+Pass[7] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 30125000 logs
+running trace...
+args has len: 30125000
+Allocator created in 47119 ns
+[14213] 03 Feb 15:06:32.390 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+209317	0	1615647	100994982	1336245	56657801	1253455	139019
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+61106010	0	919306693	13605171127	1736516872	9356722027	2242659075	270393877
+done in 17612789379 ns, fence time is 27328, thread: 0, pass: 7
+total run time is 92156762243 ns, thread: 0, pass: 7
+average read latency is 548 ns, thread: 0, pass: 7
+average write latency is 403 ns, thread: 0, pass: 7
+All nodes synced in 1261605334 ns
+Pass[8] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 21039000 logs
+running trace...
+args has len: 21039000
+Allocator created in 47634 ns
+[14247] 03 Feb 15:06:44.679 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+212956	0	1692143	115948420	1448863	62509596	1363019	146936
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+62436002	0	966955702	15567722033	1883464457	10305780193	2441507516	284448006
+done in 10587227075 ns, fence time is 30390, thread: 0, pass: 8
+total run time is 102743989318 ns, thread: 0, pass: 8
+average read latency is 442 ns, thread: 0, pass: 8
+average write latency is 390 ns, thread: 0, pass: 8
+All nodes synced in 5251193797 ns
+Pass[9] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 37093000 logs
+running trace...
+args has len: 37093000
+Allocator created in 44979 ns
+[14272] 03 Feb 15:07:04.756 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+212956	0	1696355	146072549	1448877	69472440	1367819	148149
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+62436002	0	969595105	19336420687	1883503580	11396961402	2459063259	288960949
+done in 14323009839 ns, fence time is 28418, thread: 0, pass: 9
+total run time is 117066999157 ns, thread: 0, pass: 9
+average read latency is 305 ns, thread: 0, pass: 9
+average write latency is 356 ns, thread: 0, pass: 9
+All nodes synced in 269981 ns
+Pass[10] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 37319000 logs
+running trace...
+args has len: 37319000
+Allocator created in 52204 ns
+[14295] 03 Feb 15:07:20.610 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+311325	0	1908453	176931971	1473782	75775226	1382012	167473
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+85600907	0	1097415992	23290227798	1917911640	12403195784	2501522752	334012601
+done in 15329213236 ns, fence time is 27211, thread: 0, pass: 10
+total run time is 132396212393 ns, thread: 0, pass: 10
+average read latency is 331 ns, thread: 0, pass: 10
+average write latency is 374 ns, thread: 0, pass: 10
+All nodes synced in 271303 ns
+Pass[11] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 32774000 logs
+running trace...
+args has len: 32774000
+Allocator created in 14601641 ns
+[14322] 03 Feb 15:07:34.153 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+324786	0	1938129	204594987	1477632	80864221	1383935	170227
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+88920797	0	1115142175	26825081443	1923724197	13202322435	2508137702	340639550
+done in 13058335102 ns, fence time is 29676, thread: 0, pass: 11
+total run time is 145454547495 ns, thread: 0, pass: 11
+average read latency is 308 ns, thread: 0, pass: 11
+average write latency is 359 ns, thread: 0, pass: 11
+All nodes synced in 990391477 ns
+Pass[12] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 6267000 logs
+running trace...
+args has len: 6267000
+Allocator created in 47967 ns
+[14344] 03 Feb 15:07:39.825 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+324843	0	1939731	208406257	1478317	83317855	1384980	170531
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+88940730	0	1116280677	27329382278	1924877045	13612810545	2511886099	341755767
+done in 4441504693 ns, fence time is 29751, thread: 0, pass: 12
+total run time is 149896052188 ns, thread: 0, pass: 12
+average read latency is 325 ns, thread: 0, pass: 12
+average write latency is 378 ns, thread: 0, pass: 12
+All nodes synced in 9535756964 ns
+Pass[13] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 20495000 logs
+running trace...
+args has len: 20495000
+Allocator created in 157655 ns
+[14366] 03 Feb 15:08:00.578 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+407030	0	2290678	220742886	1502081	91336726	1398951	190080
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+107165449	0	1292196734	28975677055	1959644801	14980031509	2546223275	389749161
+done in 10889779412 ns, fence time is 30091, thread: 0, pass: 13
+total run time is 160785831600 ns, thread: 0, pass: 13
+average read latency is 368 ns, thread: 0, pass: 13
+average write latency is 396 ns, thread: 0, pass: 13
+All nodes synced in 4158598481 ns
+Pass[14] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 21104000 logs
+running trace...
+args has len: 21104000
+Allocator created in 48625 ns
+[14392] 03 Feb 15:08:16.249 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+509170	0	2745474	233389601	1531213	99620791	1415599	215349
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+129614589	0	1520457520	30642860331	2002116742	16394113434	2587849732	452878377
+done in 11135438838 ns, fence time is 30322, thread: 0, pass: 14
+total run time is 171921270438 ns, thread: 0, pass: 14
+average read latency is 373 ns, thread: 0, pass: 14
+average write latency is 395 ns, thread: 0, pass: 14
+All nodes synced in 4238618351 ns
+Pass[15] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 17957000 logs
+running trace...
+args has len: 17957000
+Allocator created in 69071 ns
+[14417] 03 Feb 15:08:30.956 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+588584	0	3113247	244182865	1572194	106615367	1443727	235960
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+147261669	0	1700542833	32058965924	2060301340	17569134763	2648870726	502001503
+done in 10096832946 ns, fence time is 30924, thread: 0, pass: 15
+total run time is 182018103384 ns, thread: 0, pass: 15
+average read latency is 396 ns, thread: 0, pass: 15
+average write latency is 393 ns, thread: 0, pass: 15
+All nodes synced in 4996505682 ns
+Pass[16] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 10138000 logs
+running trace...
+args has len: 10138000
+Allocator created in 47039 ns
+[14440] 03 Feb 15:08:42.759 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+588642	0	3114499	250254699	1573114	110679068	1444623	236535
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+147290655	0	1701684153	32865864353	2061900390	18245706384	2651194390	504867391
+done in 6515137571 ns, fence time is 35534, thread: 0, pass: 16
+total run time is 188533240955 ns, thread: 0, pass: 16
+average read latency is 330 ns, thread: 0, pass: 16
+average write latency is 383 ns, thread: 0, pass: 16
+All nodes synced in 6568687863 ns
+Pass[17] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 26609000 logs
+running trace...
+args has len: 26609000
+Allocator created in 49319 ns
+[14462] 03 Feb 15:09:00.928 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+588642	0	3120113	267353635	1574065	120186493	1445701	237132
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+147290655	0	1704801461	35016562113	2063543053	19745483667	2655520173	507566374
+done in 11208041598 ns, fence time is 28961, thread: 0, pass: 17
+total run time is 199741282553 ns, thread: 0, pass: 17
+average read latency is 305 ns, thread: 0, pass: 17
+average write latency is 361 ns, thread: 0, pass: 17
+All nodes synced in 243058 ns
+Pass[18] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 32422000 logs
+running trace...
+args has len: 32422000
+Allocator created in 69237 ns
+[14481] 03 Feb 15:09:22.170 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+709203	0	3947659	287798105	1940734	131259798	1795950	303862
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+183359616	0	2148660930	37865021832	2540352097	21643300036	3286638091	646788216
+done in 20778255609 ns, fence time is 23267, thread: 0, pass: 18
+total run time is 220519538162 ns, thread: 0, pass: 18
+average read latency is 631 ns, thread: 0, pass: 18
+average write latency is 430 ns, thread: 0, pass: 18
+All nodes synced in 215102 ns
+Pass[19] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 10722000 logs
+running trace...
+args has len: 10722000
+Allocator created in 44611 ns
+[14512] 03 Feb 15:09:31.354 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846464	294090071	2116375	135160015	1948770	363666
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610023820	38827752003	2772250318	22398785882	3572242999	778345652
+done in 8903570364 ns, fence time is 31468, thread: 0, pass: 19
+total run time is 229423108526 ns, thread: 0, pass: 19
+average read latency is 862 ns, thread: 0, pass: 19
+average write latency is 513 ns, thread: 0, pass: 19
+All nodes synced in 9967179464 ns
+Pass[20] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 65825 ns
+[14543] 03 Feb 15:09:41.488 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846478	294090089	2116375	135160993	1948770	363670
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610045302	38827780666	2772250318	22399317402	3572242999	778394536
+done in 1844976 ns, fence time is 31004, thread: 0, pass: 20
+total run time is 229424953502 ns, thread: 0, pass: 20
+average read latency is 2730 ns, thread: 0, pass: 20
+average write latency is 1393 ns, thread: 0, pass: 20
+All nodes synced in 14951893056 ns
+Pass[21] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 57350 ns
+[14565] 03 Feb 15:09:56.600 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846491	294090313	2116382	135161748	1948779	363673
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610102072	38827975317	2772283740	22399702851	3572311828	778429784
+done in 2516459 ns, fence time is 33049, thread: 0, pass: 21
+total run time is 229427469961 ns, thread: 0, pass: 21
+average read latency is 2403 ns, thread: 0, pass: 21
+average write latency is 1301 ns, thread: 0, pass: 21
+All nodes synced in 14750925484 ns
+Pass[22] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 60593 ns
+[14590] 03 Feb 15:10:11.511 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846501	294090395	2116384	135162657	1948782	363677
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610121843	38828024118	2772305849	22400316446	3572330731	778452721
+done in 1823942 ns, fence time is 34653, thread: 0, pass: 22
+total run time is 229429293903 ns, thread: 0, pass: 22
+average read latency is 2115 ns, thread: 0, pass: 22
+average write latency is 1442 ns, thread: 0, pass: 22
+All nodes synced in 13804290420 ns
+Pass[23] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 58116 ns
+[14612] 03 Feb 15:10:25.474 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846515	294090544	2116386	135163498	1948788	363679
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610146310	38828132065	2772314530	22400781256	3572361467	778481987
+done in 1830603 ns, fence time is 30523, thread: 0, pass: 23
+total run time is 229431124506 ns, thread: 0, pass: 23
+average read latency is 2223 ns, thread: 0, pass: 23
+average write latency is 1384 ns, thread: 0, pass: 23
+All nodes synced in 14744990680 ns
+Pass[24] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 57959 ns
+[14634] 03 Feb 15:10:40.380 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846525	294091149	2116401	135163833	1948831	363681
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610168360	38828508221	2772362945	22401065555	3572652374	778494905
+done in 3101316 ns, fence time is 30360, thread: 0, pass: 24
+total run time is 229434225822 ns, thread: 0, pass: 24
+average read latency is 2598 ns, thread: 0, pass: 24
+average write latency is 1787 ns, thread: 0, pass: 24
+All nodes synced in 14740404481 ns
+Pass[25] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 59056 ns
+[14661] 03 Feb 15:10:55.284 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846527	294091521	2116404	135164453	1948834	363682
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610178272	38828784248	2772375643	22401416460	3572691819	778503616
+done in 5812096 ns, fence time is 36521, thread: 0, pass: 25
+total run time is 229440037918 ns, thread: 0, pass: 25
+average read latency is 1733 ns, thread: 0, pass: 25
+average write latency is 1314 ns, thread: 0, pass: 25
+All nodes synced in 13973457697 ns
+Pass[26] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 51455 ns
+[14666] 03 Feb 15:11:09.426 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846535	294091991	2116408	135164964	1948843	363684
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610198836	38829038172	2772391564	22401699107	3572745319	778536224
+done in 10665984 ns, fence time is 31250, thread: 0, pass: 26
+total run time is 229450703902 ns, thread: 0, pass: 26
+average read latency is 1589 ns, thread: 0, pass: 26
+average write latency is 1351 ns, thread: 0, pass: 26
+All nodes synced in 13844635357 ns
+Pass[27] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 14013423 ns
+[14667] 03 Feb 15:11:23.445 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846546	294092072	2116410	135165873	1948847	363688
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610217393	38829094419	2772398070	22402203556	3572782048	778567818
+done in 1818133 ns, fence time is 31685, thread: 0, pass: 27
+total run time is 229452522035 ns, thread: 0, pass: 27
+average read latency is 2614 ns, thread: 0, pass: 27
+average write latency is 1290 ns, thread: 0, pass: 27
+All nodes synced in 14285917146 ns
+Pass[28] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 57368 ns
+[14669] 03 Feb 15:11:37.891 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846560	294092234	2116412	135166704	1948850	363690
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610241247	38829233555	2772408322	22402719532	3572797806	778596346
+done in 1917776 ns, fence time is 37297, thread: 0, pass: 28
+total run time is 229454439811 ns, thread: 0, pass: 28
+average read latency is 1982 ns, thread: 0, pass: 28
+average write latency is 1381 ns, thread: 0, pass: 28
+All nodes synced in 14845936383 ns
+Pass[29] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 58780 ns
+[14689] 03 Feb 15:11:53.456 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846563	294092859	2116416	135167047	1948877	363691
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610249503	38829627124	2772420524	22402919153	3572986284	778602445
+done in 561879102 ns, fence time is 50560, thread: 0, pass: 29
+total run time is 230016318913 ns, thread: 0, pass: 29
+average read latency is 2098 ns, thread: 0, pass: 29
+average write latency is 1335 ns, thread: 0, pass: 29
+All nodes synced in 14144607002 ns
+Pass[30] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 58500 ns
+[14714] 03 Feb 15:12:07.761 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846565	294093385	2116421	135167500	1948892	363692
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610258245	38830043561	2772451231	22403184426	3573114434	778611914
+done in 2934590 ns, fence time is 28733, thread: 0, pass: 30
+total run time is 230019253503 ns, thread: 0, pass: 30
+average read latency is 2081 ns, thread: 0, pass: 30
+average write latency is 1378 ns, thread: 0, pass: 30
+All nodes synced in 3649074604 ns
+Pass[31] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 55985 ns
+[14721] 03 Feb 15:12:11.572 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846566	294093993	2116424	135167880	1948900	363693
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610264409	38830442496	2772468978	22403408792	3573175444	778620113
+done in 3070368 ns, fence time is 37343, thread: 0, pass: 31
+total run time is 230022323871 ns, thread: 0, pass: 31
+average read latency is 1658 ns, thread: 0, pass: 31
+average write latency is 1440 ns, thread: 0, pass: 31
+All nodes synced in 232139 ns
+Pass[32] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 58908 ns
+[14722] 03 Feb 15:12:11.726 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846568	294094606	2116429	135168250	1948911	363694
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610275547	38830868407	2772487315	22403662536	3573298717	778628149
+done in 2073889 ns, fence time is 27403, thread: 0, pass: 32
+total run time is 230024397760 ns, thread: 0, pass: 32
+average read latency is 1715 ns, thread: 0, pass: 32
+average write latency is 1451 ns, thread: 0, pass: 32
+All nodes synced in 119439 ns
+Pass[33] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 57343 ns
+[14723] 03 Feb 15:12:11.881 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846571	294095219	2116432	135168618	1948926	363695
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610282048	38831252200	2772498118	22403868464	3573410411	778634452
+done in 2322559 ns, fence time is 27932, thread: 0, pass: 33
+total run time is 230026720319 ns, thread: 0, pass: 33
+average read latency is 1711 ns, thread: 0, pass: 33
+average write latency is 1307 ns, thread: 0, pass: 33
+All nodes synced in 133285 ns
+Pass[34] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 58220 ns
+[14724] 03 Feb 15:12:12.035 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846583	294095773	2116435	135169050	1948934	363698
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610303545	38831592905	2772510852	22404166973	3573475825	778652736
+done in 1814271 ns, fence time is 29019, thread: 0, pass: 34
+total run time is 230028534590 ns, thread: 0, pass: 34
+average read latency is 1539 ns, thread: 0, pass: 34
+average write latency is 1454 ns, thread: 0, pass: 34
+All nodes synced in 196307 ns
+Pass[35] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 60655 ns
+[14725] 03 Feb 15:12:12.188 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846583	294096308	2116437	135169511	1948936	363698
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610303545	38831885324	2772518356	22404423063	3573504888	778652736
+done in 1594808 ns, fence time is 28043, thread: 0, pass: 35
+total run time is 230030129398 ns, thread: 0, pass: 35
+average read latency is 1314 ns, thread: 0, pass: 35
+average write latency is 1247 ns, thread: 0, pass: 35
+All nodes synced in 277572 ns
+Pass[36] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 84622 ns
+[14726] 03 Feb 15:12:12.342 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846583	294096892	2116439	135169918	1948943	363698
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610303545	38832299689	2772542136	22404670753	3573547686	778652736
+done in 1832122 ns, fence time is 31473, thread: 0, pass: 36
+total run time is 230031961520 ns, thread: 0, pass: 36
+average read latency is 1527 ns, thread: 0, pass: 36
+average write latency is 1357 ns, thread: 0, pass: 36
+All nodes synced in 89596 ns
+Pass[37] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 67522 ns
+[14727] 03 Feb 15:12:12.496 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846583	294097523	2116439	135170286	1948944	363698
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610303545	38832689255	2772542136	22404871549	3573567410	778652736
+done in 1612848 ns, fence time is 30280, thread: 0, pass: 37
+total run time is 230033574368 ns, thread: 0, pass: 37
+average read latency is 1344 ns, thread: 0, pass: 37
+average write latency is 1224 ns, thread: 0, pass: 37
+All nodes synced in 895900 ns
+Pass[38] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 58266 ns
+[14728] 03 Feb 15:12:12.650 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846583	294098161	2116440	135170646	1948945	363698
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610303545	38833150306	2772561105	22405078698	3573575385	778652736
+done in 1666099 ns, fence time is 29515, thread: 0, pass: 38
+total run time is 230035240467 ns, thread: 0, pass: 38
+average read latency is 1365 ns, thread: 0, pass: 38
+average write latency is 1327 ns, thread: 0, pass: 38
+All nodes synced in 3196313 ns
+Pass[39] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 68925 ns
+[14729] 03 Feb 15:12:12.807 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846583	294098738	2116440	135171062	1948951	363699
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610303545	38833523705	2772561105	22405327277	3573625651	778659348
+done in 1805305 ns, fence time is 33272, thread: 0, pass: 39
+total run time is 230037045772 ns, thread: 0, pass: 39
+average read latency is 1484 ns, thread: 0, pass: 39
+average write latency is 1310 ns, thread: 0, pass: 39
+All nodes synced in 887502 ns
+Pass[40] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 57534 ns
+[14730] 03 Feb 15:12:12.972 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846583	294099264	2116440	135171532	1948954	363700
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610303545	38833832119	2772561105	22405586088	3573656823	778666461
+done in 11597469 ns, fence time is 26967, thread: 0, pass: 40
+total run time is 230048643241 ns, thread: 0, pass: 40
+average read latency is 1363 ns, thread: 0, pass: 40
+average write latency is 1262 ns, thread: 0, pass: 40
+All nodes synced in 245950 ns
+Pass[41] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 75489 ns
+[14731] 03 Feb 15:12:13.127 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846583	294099865	2116441	135171930	1948954	363700
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610303545	38834363418	2772578445	22405807993	3573656823	778666461
+done in 1726079 ns, fence time is 28992, thread: 0, pass: 41
+total run time is 230050369320 ns, thread: 0, pass: 41
+average read latency is 1506 ns, thread: 0, pass: 41
+average write latency is 1276 ns, thread: 0, pass: 41
+All nodes synced in 159453 ns
+Pass[42] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 54556 ns
+[14732] 03 Feb 15:12:13.281 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294100494	2116441	135172297	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38834716399	2772578445	22406018609	3573679174	778697177
+done in 1796401 ns, fence time is 28928, thread: 0, pass: 42
+total run time is 230052165721 ns, thread: 0, pass: 42
+average read latency is 1240 ns, thread: 0, pass: 42
+average write latency is 1380 ns, thread: 0, pass: 42
+All nodes synced in 273506 ns
+Pass[43] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 55729 ns
+[14736] 03 Feb 15:12:13.434 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294101174	2116441	135172617	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38835023671	2772578445	22406207064	3573679174	778697177
+done in 1584745 ns, fence time is 56558, thread: 0, pass: 43
+total run time is 230053750466 ns, thread: 0, pass: 43
+average read latency is 1049 ns, thread: 0, pass: 43
+average write latency is 1292 ns, thread: 0, pass: 43
+All nodes synced in 276635 ns
+Pass[44] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 56672 ns
+[14737] 03 Feb 15:12:13.588 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294101858	2116441	135172933	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38835309720	2772578445	22406363098	3573679174	778697177
+done in 1372989 ns, fence time is 59233, thread: 0, pass: 44
+total run time is 230055123455 ns, thread: 0, pass: 44
+average read latency is 978 ns, thread: 0, pass: 44
+average write latency is 1116 ns, thread: 0, pass: 44
+All nodes synced in 7095466233 ns
+Pass[45] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 53780 ns
+[14747] 03 Feb 15:12:20.843 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294102538	2116441	135173253	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38835672967	2772578445	22406566413	3573679174	778697177
+done in 1591136 ns, fence time is 72589, thread: 0, pass: 45
+total run time is 230056714591 ns, thread: 0, pass: 45
+average read latency is 1140 ns, thread: 0, pass: 45
+average write latency is 1315 ns, thread: 0, pass: 45
+All nodes synced in 15641229129 ns
+Pass[46] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 50807 ns
+[14772] 03 Feb 15:12:36.644 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294103226	2116441	135173565	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38836005627	2772578445	22406766135	3573679174	778697177
+done in 1516272 ns, fence time is 59222, thread: 0, pass: 46
+total run time is 230058230863 ns, thread: 0, pass: 46
+average read latency is 1090 ns, thread: 0, pass: 46
+average write latency is 1322 ns, thread: 0, pass: 46
+All nodes synced in 14523740045 ns
+Pass[47] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 52220 ns
+[14794] 03 Feb 15:12:51.328 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294103910	2116441	135173881	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38836314677	2772578445	22406935771	3573679174	778697177
+done in 1459402 ns, fence time is 56936, thread: 0, pass: 47
+total run time is 230059690265 ns, thread: 0, pass: 47
+average read latency is 1058 ns, thread: 0, pass: 47
+average write latency is 1219 ns, thread: 0, pass: 47
+All nodes synced in 13972720130 ns
+Pass[48] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 54557 ns
+[14816] 03 Feb 15:13:05.463 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294104595	2116441	135174196	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38836640211	2772578445	22407106460	3573679174	778697177
+done in 1635331 ns, fence time is 57967, thread: 0, pass: 48
+total run time is 230061325596 ns, thread: 0, pass: 48
+average read latency is 1081 ns, thread: 0, pass: 48
+average write latency is 1723 ns, thread: 0, pass: 48
+All nodes synced in 14778600225 ns
+Pass[49] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 50512 ns
+[14841] 03 Feb 15:13:20.403 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294105275	2116441	135174516	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38836963702	2772578445	22407279959	3573679174	778697177
+done in 1640213 ns, fence time is 56591, thread: 0, pass: 49
+total run time is 230062965809 ns, thread: 0, pass: 49
+average read latency is 1239 ns, thread: 0, pass: 49
+average write latency is 1226 ns, thread: 0, pass: 49
+All nodes synced in 15029695550 ns
+Pass[50] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 53153 ns
+[14864] 03 Feb 15:13:35.593 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294105960	2116441	135174831	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38837270392	2772578445	22407452450	3573679174	778697177
+done in 1467139 ns, fence time is 59111, thread: 0, pass: 50
+total run time is 230064432948 ns, thread: 0, pass: 50
+average read latency is 1060 ns, thread: 0, pass: 50
+average write latency is 1236 ns, thread: 0, pass: 50
+All nodes synced in 14834713859 ns
+Pass[51] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 54270 ns
+[14889] 03 Feb 15:13:50.589 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294106646	2116441	135175145	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38837581692	2772578445	22407619699	3573679174	778697177
+done in 1460866 ns, fence time is 56387, thread: 0, pass: 51
+total run time is 230065893814 ns, thread: 0, pass: 51
+average read latency is 1063 ns, thread: 0, pass: 51
+average write latency is 1215 ns, thread: 0, pass: 51
+All nodes synced in 14754479890 ns
+Pass[52] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 49742 ns
+[14911] 03 Feb 15:14:05.503 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294107328	2116441	135175463	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38837891871	2772578445	22407792112	3573679174	778697177
+done in 1506908 ns, fence time is 57216, thread: 0, pass: 52
+total run time is 230067400722 ns, thread: 0, pass: 52
+average read latency is 1088 ns, thread: 0, pass: 52
+average write latency is 1215 ns, thread: 0, pass: 52
+All nodes synced in 14363910557 ns
+Pass[53] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 51468 ns
+[14933] 03 Feb 15:14:20.028 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294108017	2116441	135175774	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38838203387	2772578445	22407959667	3573679174	778697177
+done in 1504323 ns, fence time is 55373, thread: 0, pass: 53
+total run time is 230068905045 ns, thread: 0, pass: 53
+average read latency is 1089 ns, thread: 0, pass: 53
+average write latency is 1216 ns, thread: 0, pass: 53
+All nodes synced in 14751602079 ns
+Pass[54] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 51263 ns
+[14958] 03 Feb 15:14:34.940 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294108698	2116441	135176093	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38838501066	2772578445	22408140108	3573679174	778697177
+done in 1475076 ns, fence time is 57945, thread: 0, pass: 54
+total run time is 230070380121 ns, thread: 0, pass: 54
+average read latency is 1034 ns, thread: 0, pass: 54
+average write latency is 1264 ns, thread: 0, pass: 54
+All nodes synced in 14877865089 ns
+Pass[55] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 69942 ns
+[14980] 03 Feb 15:14:49.979 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294109384	2116441	135176407	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38838830389	2772578445	22408309834	3573679174	778697177
+done in 1530535 ns, fence time is 59853, thread: 0, pass: 55
+total run time is 230071910656 ns, thread: 0, pass: 55
+average read latency is 1127 ns, thread: 0, pass: 55
+average write latency is 1220 ns, thread: 0, pass: 55
+All nodes synced in 3944847663 ns
+Pass[56] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 45916 ns
+[14987] 03 Feb 15:14:54.084 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294110064	2116441	135176727	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38839135624	2772578445	22408485973	3573679174	778697177
+done in 1474383 ns, fence time is 54900, thread: 0, pass: 56
+total run time is 230073385039 ns, thread: 0, pass: 56
+average read latency is 1085 ns, thread: 0, pass: 56
+average write latency is 1240 ns, thread: 0, pass: 56
+All nodes synced in 240614 ns
+Pass[57] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 51557 ns
+[14988] 03 Feb 15:14:54.240 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294110753	2116441	135177038	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38839469466	2772578445	22408660985	3573679174	778697177
+done in 1465840 ns, fence time is 46264, thread: 0, pass: 57
+total run time is 230074850879 ns, thread: 0, pass: 57
+average read latency is 1082 ns, thread: 0, pass: 57
+average write latency is 1260 ns, thread: 0, pass: 57
+All nodes synced in 248576 ns
+Pass[58] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 53505 ns
+[14992] 03 Feb 15:14:54.395 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294111436	2116441	135177355	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38839781867	2772578445	22408830210	3573679174	778697177
+done in 1601327 ns, fence time is 154541, thread: 0, pass: 58
+total run time is 230076452206 ns, thread: 0, pass: 58
+average read latency is 1064 ns, thread: 0, pass: 58
+average write latency is 1215 ns, thread: 0, pass: 58
+All nodes synced in 5532961152 ns
+Pass[59] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 16036819 ns
+[14999] 03 Feb 15:15:00.104 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294112117	2116441	135177674	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38840086989	2772578445	22408999010	3573679174	778697177
+done in 1437294 ns, fence time is 48445, thread: 0, pass: 59
+total run time is 230077889500 ns, thread: 0, pass: 59
+average read latency is 1053 ns, thread: 0, pass: 59
+average write latency is 1209 ns, thread: 0, pass: 59
+All nodes synced in 14866922322 ns
+Pass[60] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 47103 ns
+[15024] 03 Feb 15:15:15.132 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294112801	2116441	135177990	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38840392695	2772578445	22409169060	3573679174	778697177
+done in 1502120 ns, fence time is 60329, thread: 0, pass: 60
+total run time is 230079391620 ns, thread: 0, pass: 60
+average read latency is 1050 ns, thread: 0, pass: 60
+average write latency is 1220 ns, thread: 0, pass: 60
+All nodes synced in 15144979198 ns
+Pass[61] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 53852 ns
+[15046] 03 Feb 15:15:30.437 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294113484	2116441	135178307	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38840699649	2772578445	22409339559	3573679174	778697177
+done in 1469141 ns, fence time is 56289, thread: 0, pass: 61
+total run time is 230080860761 ns, thread: 0, pass: 61
+average read latency is 1065 ns, thread: 0, pass: 61
+average write latency is 1249 ns, thread: 0, pass: 61
+All nodes synced in 15497792016 ns
+Pass[62] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 50157 ns
+[15071] 03 Feb 15:15:46.096 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294114164	2116441	135178627	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38841005574	2772578445	22409515612	3573679174	778697177
+done in 1517508 ns, fence time is 59292, thread: 0, pass: 62
+total run time is 230082378269 ns, thread: 0, pass: 62
+average read latency is 1110 ns, thread: 0, pass: 62
+average write latency is 1226 ns, thread: 0, pass: 62
+All nodes synced in 7040015431 ns
+Pass[63] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 51149 ns
+[15084] 03 Feb 15:15:53.296 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294114848	2116441	135178943	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38841314877	2772578445	22409687075	3573679174	778697177
+done in 1498854 ns, fence time is 55949, thread: 0, pass: 63
+total run time is 230083877123 ns, thread: 0, pass: 63
+average read latency is 1059 ns, thread: 0, pass: 63
+average write latency is 1222 ns, thread: 0, pass: 63
+All nodes synced in 256058 ns
+Pass[64] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 51948 ns
+[15085] 03 Feb 15:15:53.451 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294115534	2116441	135179257	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38841630995	2772578445	22409857028	3573679174	778697177
+done in 1592076 ns, fence time is 52343, thread: 0, pass: 64
+total run time is 230085469199 ns, thread: 0, pass: 64
+average read latency is 1239 ns, thread: 0, pass: 64
+average write latency is 1220 ns, thread: 0, pass: 64
+All nodes synced in 151992 ns
+Pass[65] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 53768 ns
+[15086] 03 Feb 15:15:53.606 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294116219	2116441	135179572	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38841940099	2772578445	22410025248	3573679174	778697177
+done in 1440199 ns, fence time is 50952, thread: 0, pass: 65
+total run time is 230086909398 ns, thread: 0, pass: 65
+average read latency is 1057 ns, thread: 0, pass: 65
+average write latency is 1214 ns, thread: 0, pass: 65
+All nodes synced in 161333 ns
+Pass[66] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 52509 ns
+[15087] 03 Feb 15:15:53.760 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294116901	2116441	135179890	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38842248269	2772578445	22410199857	3573679174	778697177
+done in 1453566 ns, fence time is 44711, thread: 0, pass: 66
+total run time is 230088362964 ns, thread: 0, pass: 66
+average read latency is 1065 ns, thread: 0, pass: 66
+average write latency is 1239 ns, thread: 0, pass: 66
+All nodes synced in 147667 ns
+Pass[67] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 51518 ns
+[15088] 03 Feb 15:15:53.915 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294117589	2116441	135180202	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38842583809	2772578445	22410369446	3573679174	778697177
+done in 1499113 ns, fence time is 51179, thread: 0, pass: 67
+total run time is 230089862077 ns, thread: 0, pass: 67
+average read latency is 1093 ns, thread: 0, pass: 67
+average write latency is 1223 ns, thread: 0, pass: 67
+All nodes synced in 155298 ns
+Pass[68] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 72094 ns
+[15089] 03 Feb 15:15:54.070 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294118267	2116441	135180524	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38842891806	2772578445	22410545642	3573679174	778697177
+done in 1463098 ns, fence time is 45554, thread: 0, pass: 68
+total run time is 230091325175 ns, thread: 0, pass: 68
+average read latency is 1058 ns, thread: 0, pass: 68
+average write latency is 1225 ns, thread: 0, pass: 68
+All nodes synced in 143250 ns
+Pass[69] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 51978 ns
+[15090] 03 Feb 15:15:54.225 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294118948	2116441	135180843	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38843202001	2772578445	22410717189	3573679174	778697177
+done in 1448814 ns, fence time is 52723, thread: 0, pass: 69
+total run time is 230092773989 ns, thread: 0, pass: 69
+average read latency is 1060 ns, thread: 0, pass: 69
+average write latency is 1222 ns, thread: 0, pass: 69
+All nodes synced in 145809 ns
+Pass[70] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 53488 ns
+[15091] 03 Feb 15:15:54.379 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294119628	2116441	135181163	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38843504138	2772578445	22410921851	3573679174	778697177
+done in 1563958 ns, fence time is 51517, thread: 0, pass: 70
+total run time is 230094337947 ns, thread: 0, pass: 70
+average read latency is 1043 ns, thread: 0, pass: 70
+average write latency is 1341 ns, thread: 0, pass: 70
+All nodes synced in 155591 ns
+Pass[71] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 54433 ns
+[15092] 03 Feb 15:15:54.534 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294120314	2116441	135181477	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38843817656	2772578445	22411141385	3573679174	778697177
+done in 1496302 ns, fence time is 49857, thread: 0, pass: 71
+total run time is 230095834249 ns, thread: 0, pass: 71
+average read latency is 1062 ns, thread: 0, pass: 71
+average write latency is 1379 ns, thread: 0, pass: 71
+All nodes synced in 320893 ns
+Pass[72] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 62339 ns
+[15096] 03 Feb 15:15:54.689 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294121007	2116441	135181784	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38844120776	2772578445	22411318805	3573679174	778697177
+done in 1437115 ns, fence time is 44828, thread: 0, pass: 72
+total run time is 230097271364 ns, thread: 0, pass: 72
+average read latency is 1034 ns, thread: 0, pass: 72
+average write latency is 1275 ns, thread: 0, pass: 72
+All nodes synced in 157043 ns
+Pass[73] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 69695 ns
+[15097] 03 Feb 15:15:54.844 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294121689	2116441	135182102	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38844422342	2772578445	22411499586	3573679174	778697177
+done in 1480429 ns, fence time is 48985, thread: 0, pass: 73
+total run time is 230098751793 ns, thread: 0, pass: 73
+average read latency is 1089 ns, thread: 0, pass: 73
+average write latency is 1274 ns, thread: 0, pass: 73
+All nodes synced in 158475 ns
+Pass[74] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 53666 ns
+[15098] 03 Feb 15:15:54.999 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294122372	2116441	135182419	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38844731653	2772578445	22411692081	3573679174	778697177
+done in 1495415 ns, fence time is 48325, thread: 0, pass: 74
+total run time is 230100247208 ns, thread: 0, pass: 74
+average read latency is 1059 ns, thread: 0, pass: 74
+average write latency is 1286 ns, thread: 0, pass: 74
+All nodes synced in 153959 ns
+Pass[75] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 54293 ns
+[15099] 03 Feb 15:15:55.154 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294123052	2116441	135182739	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38845039971	2772578445	22411861828	3573679174	778697177
+done in 1441387 ns, fence time is 49211, thread: 0, pass: 75
+total run time is 230101688595 ns, thread: 0, pass: 75
+average read latency is 1059 ns, thread: 0, pass: 75
+average write latency is 1212 ns, thread: 0, pass: 75
+All nodes synced in 178586 ns
+Pass[76] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 56896 ns
+[15100] 03 Feb 15:15:55.308 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294123741	2116441	135183050	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38845354312	2772578445	22412027516	3573679174	778697177
+done in 1474960 ns, fence time is 46712, thread: 0, pass: 76
+total run time is 230103163555 ns, thread: 0, pass: 76
+average read latency is 1064 ns, thread: 0, pass: 76
+average write latency is 1322 ns, thread: 0, pass: 76
+All nodes synced in 152024 ns
+Pass[77] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 80941 ns
+[15101] 03 Feb 15:15:55.463 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294124424	2116441	135183367	1948955	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38845716035	2772578445	22412199093	3573679174	778697177
+done in 1496443 ns, fence time is 52121, thread: 0, pass: 77
+total run time is 230104659998 ns, thread: 0, pass: 77
+average read latency is 1134 ns, thread: 0, pass: 77
+average write latency is 1221 ns, thread: 0, pass: 77
+All nodes synced in 182910 ns
+Pass[78] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 53562 ns
+[15102] 03 Feb 15:15:55.618 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294125107	2116441	135183683	1948956	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38846041591	2772578445	22412375490	3573698336	778697177
+done in 1806867 ns, fence time is 33742, thread: 0, pass: 78
+total run time is 230106466865 ns, thread: 0, pass: 78
+average read latency is 1142 ns, thread: 0, pass: 78
+average write latency is 1260 ns, thread: 0, pass: 78
+All nodes synced in 246475 ns
+Pass[79] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 58055 ns
+[15103] 03 Feb 15:15:55.773 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294125799	2116441	135183991	1948956	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38846356639	2772578445	22412542202	3573698336	778697177
+done in 1446114 ns, fence time is 52131, thread: 0, pass: 79
+total run time is 230107912979 ns, thread: 0, pass: 79
+average read latency is 1060 ns, thread: 0, pass: 79
+average write latency is 1218 ns, thread: 0, pass: 79
+All nodes synced in 140745 ns
+Pass[80] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 63963 ns
+[15104] 03 Feb 15:15:55.927 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294126482	2116441	135184308	1948956	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38846720172	2772578445	22412724002	3573698336	778697177
+done in 1602467 ns, fence time is 47023, thread: 0, pass: 80
+total run time is 230109515446 ns, thread: 0, pass: 80
+average read latency is 1132 ns, thread: 0, pass: 80
+average write latency is 1286 ns, thread: 0, pass: 80
+All nodes synced in 155366 ns
+Pass[81] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 91983 ns
+[15105] 03 Feb 15:15:56.082 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294127165	2116441	135184625	1948956	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38847028382	2772578445	22412895485	3573698336	778697177
+done in 1505372 ns, fence time is 47703, thread: 0, pass: 81
+total run time is 230111020818 ns, thread: 0, pass: 81
+average read latency is 1058 ns, thread: 0, pass: 81
+average write latency is 1418 ns, thread: 0, pass: 81
+All nodes synced in 139689 ns
+Pass[82] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 70327 ns
+[15106] 03 Feb 15:15:56.237 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846585	294127853	2116441	135184937	1948956	363703
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610310485	38847332826	2772578445	22413074927	3573698336	778697177
+done in 1447168 ns, fence time is 51061, thread: 0, pass: 82
+total run time is 230112467986 ns, thread: 0, pass: 82
+average read latency is 1040 ns, thread: 0, pass: 82
+average write latency is 1268 ns, thread: 0, pass: 82
+All nodes synced in 151059 ns
+Pass[83] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 52655 ns
+[15107] 03 Feb 15:15:56.391 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294128526	2116443	135185257	1948958	363706
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38847667031	2772585462	22413247772	3573726446	778716356
+done in 1807408 ns, fence time is 27435, thread: 0, pass: 83
+total run time is 230114275394 ns, thread: 0, pass: 83
+average read latency is 1228 ns, thread: 0, pass: 83
+average write latency is 1735 ns, thread: 0, pass: 83
+All nodes synced in 156851 ns
+Pass[84] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 51964 ns
+[15108] 03 Feb 15:15:56.546 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294129211	2116443	135185572	1948958	363706
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38847978600	2772585462	22413415192	3573726446	778716356
+done in 1446942 ns, fence time is 51268, thread: 0, pass: 84
+total run time is 230115722336 ns, thread: 0, pass: 84
+average read latency is 1061 ns, thread: 0, pass: 84
+average write latency is 1213 ns, thread: 0, pass: 84
+All nodes synced in 173843 ns
+Pass[85] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 51386 ns
+[15112] 03 Feb 15:15:56.700 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294129894	2116443	135185889	1948958	363706
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38848299284	2772585462	22413626009	3573726446	778716356
+done in 1495559 ns, fence time is 48097, thread: 0, pass: 85
+total run time is 230117217895 ns, thread: 0, pass: 85
+average read latency is 1067 ns, thread: 0, pass: 85
+average write latency is 1365 ns, thread: 0, pass: 85
+All nodes synced in 122782 ns
+Pass[86] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 48516 ns
+[15113] 03 Feb 15:15:56.855 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294130574	2116443	135186209	1948958	363706
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38848607920	2772585462	22413828460	3573726446	778716356
+done in 1502832 ns, fence time is 53751, thread: 0, pass: 86
+total run time is 230118720727 ns, thread: 0, pass: 86
+average read latency is 1059 ns, thread: 0, pass: 86
+average write latency is 1317 ns, thread: 0, pass: 86
+All nodes synced in 136439 ns
+Pass[87] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 53648 ns
+[15114] 03 Feb 15:15:57.010 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294131256	2116443	135186527	1948958	363706
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38848909442	2772585462	22414012258	3573726446	778716356
+done in 1503545 ns, fence time is 49713, thread: 0, pass: 87
+total run time is 230120224272 ns, thread: 0, pass: 87
+average read latency is 1040 ns, thread: 0, pass: 87
+average write latency is 1438 ns, thread: 0, pass: 87
+All nodes synced in 271013 ns
+Pass[88] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 49224 ns
+[15115] 03 Feb 15:15:57.165 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294131939	2116443	135186844	1948958	363706
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38849219427	2772585462	22414182124	3573726446	778716356
+done in 1443750 ns, fence time is 53133, thread: 0, pass: 88
+total run time is 230121668022 ns, thread: 0, pass: 88
+average read latency is 1058 ns, thread: 0, pass: 88
+average write latency is 1212 ns, thread: 0, pass: 88
+All nodes synced in 261818 ns
+Pass[89] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 56656 ns
+[15116] 03 Feb 15:15:57.320 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294132625	2116443	135187158	1948958	363706
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38849528892	2772585462	22414353259	3573726446	778716356
+done in 1468928 ns, fence time is 46534, thread: 0, pass: 89
+total run time is 230123136950 ns, thread: 0, pass: 89
+average read latency is 1101 ns, thread: 0, pass: 89
+average write latency is 1225 ns, thread: 0, pass: 89
+All nodes synced in 132492 ns
+Pass[90] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 54422 ns
+[15117] 03 Feb 15:15:57.474 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294133308	2116443	135187475	1948958	363706
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38849828864	2772585462	22414554367	3573726446	778716356
+done in 1461896 ns, fence time is 46408, thread: 0, pass: 90
+total run time is 230124598846 ns, thread: 0, pass: 90
+average read latency is 1039 ns, thread: 0, pass: 90
+average write latency is 1334 ns, thread: 0, pass: 90
+All nodes synced in 122636 ns
+Pass[91] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 65333 ns
+[15118] 03 Feb 15:15:57.629 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294133988	2116443	135187795	1948958	363706
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38850131452	2772585462	22414737472	3573726446	778716356
+done in 1482118 ns, fence time is 74347, thread: 0, pass: 91
+total run time is 230126080964 ns, thread: 0, pass: 91
+average read latency is 1042 ns, thread: 0, pass: 91
+average write latency is 1268 ns, thread: 0, pass: 91
+All nodes synced in 232296 ns
+Pass[92] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 55908 ns
+[15119] 03 Feb 15:15:57.784 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294134674	2116443	135188109	1948958	363706
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38850473387	2772585462	22414907590	3573726446	778716356
+done in 1473257 ns, fence time is 51181, thread: 0, pass: 92
+total run time is 230127554221 ns, thread: 0, pass: 92
+average read latency is 1104 ns, thread: 0, pass: 92
+average write latency is 1214 ns, thread: 0, pass: 92
+All nodes synced in 129569 ns
+Pass[93] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 54481 ns
+[15120] 03 Feb 15:15:57.938 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294135361	2116443	135188422	1948958	363706
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38850786252	2772585462	22415144355	3573726446	778716356
+done in 1520650 ns, fence time is 46481, thread: 0, pass: 93
+total run time is 230129074871 ns, thread: 0, pass: 93
+average read latency is 1077 ns, thread: 0, pass: 93
+average write latency is 1434 ns, thread: 0, pass: 93
+All nodes synced in 133069 ns
+Pass[94] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 72371 ns
+[15121] 03 Feb 15:15:58.093 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294136043	2116443	135188740	1948958	363706
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38851086926	2772585462	22415328612	3573726446	778716356
+done in 1445744 ns, fence time is 48570, thread: 0, pass: 94
+total run time is 230130520615 ns, thread: 0, pass: 94
+average read latency is 1038 ns, thread: 0, pass: 94
+average write latency is 1274 ns, thread: 0, pass: 94
+All nodes synced in 149204 ns
+Pass[95] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 53545 ns
+[15122] 03 Feb 15:15:58.248 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294136725	2116443	135189057	1948958	363707
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38851396075	2772585462	22415529602	3573726446	778742387
+done in 1479688 ns, fence time is 30668, thread: 0, pass: 95
+total run time is 230132000303 ns, thread: 0, pass: 95
+average read latency is 1059 ns, thread: 0, pass: 95
+average write latency is 1394 ns, thread: 0, pass: 95
+All nodes synced in 126326 ns
+Pass[96] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 63944 ns
+[15123] 03 Feb 15:15:58.402 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294137414	2116443	135189368	1948958	363707
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38851770807	2772585462	22415713187	3573726446	778742387
+done in 1525883 ns, fence time is 46791, thread: 0, pass: 96
+total run time is 230133526186 ns, thread: 0, pass: 96
+average read latency is 1151 ns, thread: 0, pass: 96
+average write latency is 1274 ns, thread: 0, pass: 96
+All nodes synced in 130472 ns
+Pass[97] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 61445 ns
+[15124] 03 Feb 15:15:58.557 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294138098	2116443	135189684	1948958	363707
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38852080514	2772585462	22415885484	3573726446	778742387
+done in 1465855 ns, fence time is 44454, thread: 0, pass: 97
+total run time is 230134992041 ns, thread: 0, pass: 97
+average read latency is 1057 ns, thread: 0, pass: 97
+average write latency is 1223 ns, thread: 0, pass: 97
+All nodes synced in 134240 ns
+Pass[98] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 111068 ns
+[15128] 03 Feb 15:15:58.711 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294138788	2116443	135189994	1948958	363707
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38852383723	2772585462	22416061390	3573726446	778742387
+done in 1473318 ns, fence time is 51478, thread: 0, pass: 98
+total run time is 230136465359 ns, thread: 0, pass: 98
+average read latency is 1036 ns, thread: 0, pass: 98
+average write latency is 1267 ns, thread: 0, pass: 98
+All nodes synced in 135613 ns
+Pass[99] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 54375 ns
+[15129] 03 Feb 15:15:58.866 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294139471	2116443	135190308	1948958	363710
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38852729817	2772585462	22416232926	3573726446	778782084
+done in 1813939 ns, fence time is 27650, thread: 0, pass: 99
+total run time is 230138279298 ns, thread: 0, pass: 99
+average read latency is 1124 ns, thread: 0, pass: 99
+average write latency is 1362 ns, thread: 0, pass: 99
+All nodes synced in 125774 ns
+Pass[100] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 94338 ns
+[15130] 03 Feb 15:15:59.021 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294140156	2116443	135190623	1948958	363710
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38853040063	2772585462	22416403817	3573726446	778782084
+done in 1443223 ns, fence time is 49517, thread: 0, pass: 100
+total run time is 230139722521 ns, thread: 0, pass: 100
+average read latency is 1059 ns, thread: 0, pass: 100
+average write latency is 1221 ns, thread: 0, pass: 100
+All nodes synced in 122872 ns
+Pass[101] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 75992 ns
+[15131] 03 Feb 15:15:59.176 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294140846	2116443	135190933	1948958	363710
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38853344230	2772585462	22416580002	3573726446	778782084
+done in 1468659 ns, fence time is 47385, thread: 0, pass: 101
+total run time is 230141191180 ns, thread: 0, pass: 101
+average read latency is 1038 ns, thread: 0, pass: 101
+average write latency is 1358 ns, thread: 0, pass: 101
+All nodes synced in 137364 ns
+Pass[102] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 71174 ns
+[15132] 03 Feb 15:15:59.330 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294141531	2116443	135191248	1948958	363710
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38853659564	2772585462	22416764962	3573726446	778782084
+done in 1485143 ns, fence time is 49188, thread: 0, pass: 102
+total run time is 230142676323 ns, thread: 0, pass: 102
+average read latency is 1088 ns, thread: 0, pass: 102
+average write latency is 1281 ns, thread: 0, pass: 102
+All nodes synced in 314837 ns
+Pass[103] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 52269 ns
+[15133] 03 Feb 15:15:59.485 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294142217	2116443	135191562	1948958	363710
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38853970881	2772585462	22416936320	3573726446	778782084
+done in 1445925 ns, fence time is 48516, thread: 0, pass: 103
+total run time is 230144122248 ns, thread: 0, pass: 103
+average read latency is 1062 ns, thread: 0, pass: 103
+average write latency is 1226 ns, thread: 0, pass: 103
+All nodes synced in 135497 ns
+Pass[104] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 57816 ns
+[15134] 03 Feb 15:15:59.640 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294142903	2116443	135191876	1948958	363710
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38854283073	2772585462	22417106231	3573726446	778782084
+done in 1446914 ns, fence time is 51314, thread: 0, pass: 104
+total run time is 230145569162 ns, thread: 0, pass: 104
+average read latency is 1061 ns, thread: 0, pass: 104
+average write latency is 1217 ns, thread: 0, pass: 104
+All nodes synced in 233946 ns
+Pass[105] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 48667 ns
+[15135] 03 Feb 15:15:59.795 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294143597	2116443	135192180	1948958	363712
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38854622569	2772585462	22417286446	3573726446	778840831
+done in 1828206 ns, fence time is 37105, thread: 0, pass: 105
+total run time is 230147397368 ns, thread: 0, pass: 105
+average read latency is 1095 ns, thread: 0, pass: 105
+average write latency is 1475 ns, thread: 0, pass: 105
+All nodes synced in 140692 ns
+Pass[106] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 53787 ns
+[15136] 03 Feb 15:15:59.950 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294144283	2116443	135192494	1948958	363712
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38854938528	2772585462	22417449347	3573726446	778840831
+done in 1492288 ns, fence time is 48103, thread: 0, pass: 106
+total run time is 230148889656 ns, thread: 0, pass: 106
+average read latency is 1163 ns, thread: 0, pass: 106
+average write latency is 1179 ns, thread: 0, pass: 106
+All nodes synced in 144290 ns
+Pass[107] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 87329 ns
+[15137] 03 Feb 15:16:00.105 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294144964	2116443	135192813	1948958	363712
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38855213067	2772585462	22417613679	3573726446	778840831
+done in 1338475 ns, fence time is 46902, thread: 0, pass: 107
+total run time is 230150228131 ns, thread: 0, pass: 107
+average read latency is 948 ns, thread: 0, pass: 107
+average write latency is 1211 ns, thread: 0, pass: 107
+All nodes synced in 129263 ns
+Pass[108] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 51273 ns
+[15138] 03 Feb 15:16:00.260 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294145654	2116443	135193123	1948958	363712
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38855513265	2772585462	22417789380	3573726446	778840831
+done in 1482474 ns, fence time is 51028, thread: 0, pass: 108
+total run time is 230151710605 ns, thread: 0, pass: 108
+average read latency is 1043 ns, thread: 0, pass: 108
+average write latency is 1302 ns, thread: 0, pass: 108
+All nodes synced in 127373 ns
+Pass[109] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 53549 ns
+[15139] 03 Feb 15:16:00.414 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294146339	2116443	135193438	1948958	363712
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38855815650	2772585462	22417956944	3573726446	778840831
+done in 1465301 ns, fence time is 50777, thread: 0, pass: 109
+total run time is 230153175906 ns, thread: 0, pass: 109
+average read latency is 1028 ns, thread: 0, pass: 109
+average write latency is 1189 ns, thread: 0, pass: 109
+All nodes synced in 127473 ns
+Pass[110] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 50169 ns
+[15140] 03 Feb 15:16:00.569 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294147021	2116443	135193756	1948958	363712
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38856136268	2772585462	22418126460	3573726446	778840831
+done in 1455735 ns, fence time is 52268, thread: 0, pass: 110
+total run time is 230154631641 ns, thread: 0, pass: 110
+average read latency is 1077 ns, thread: 0, pass: 110
+average write latency is 1213 ns, thread: 0, pass: 110
+All nodes synced in 154830 ns
+Pass[111] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 53425 ns
+[15144] 03 Feb 15:16:00.724 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294147707	2116443	135194070	1948958	363712
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38856443278	2772585462	22418290491	3573726446	778840831
+done in 1457365 ns, fence time is 47431, thread: 0, pass: 111
+total run time is 230156089006 ns, thread: 0, pass: 111
+average read latency is 1087 ns, thread: 0, pass: 111
+average write latency is 1229 ns, thread: 0, pass: 111
+All nodes synced in 130925 ns
+Pass[112] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 65423 ns
+[15145] 03 Feb 15:16:00.889 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846587	294148392	2116443	135194385	1948958	363712
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610406351	38856745669	2772585462	22418455920	3573726446	778840831
+done in 11633879 ns, fence time is 10243783, thread: 0, pass: 112
+total run time is 230167722885 ns, thread: 0, pass: 112
+average read latency is 1069 ns, thread: 0, pass: 112
+average write latency is 1180 ns, thread: 0, pass: 112
+All nodes synced in 3160837882 ns
+Pass[113] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 64155 ns
+[15149] 03 Feb 15:16:04.210 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846589	294149080	2116443	135194696	1948958	363713
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610411953	38856970465	2772585462	22418567056	3573726446	778865582
+done in 1064334 ns, fence time is 29555, thread: 0, pass: 113
+total run time is 230168787219 ns, thread: 0, pass: 113
+average read latency is 783 ns, thread: 0, pass: 113
+average write latency is 887 ns, thread: 0, pass: 113
+All nodes synced in 5027869752 ns
+Pass[114] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 50197 ns
+[15159] 03 Feb 15:16:09.399 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846589	294149760	2116443	135195016	1948958	363713
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610411953	38857298737	2772585462	22418793497	3573726446	778865582
+done in 1527011 ns, fence time is 55062, thread: 0, pass: 114
+total run time is 230170314230 ns, thread: 0, pass: 114
+average read latency is 1080 ns, thread: 0, pass: 114
+average write latency is 1409 ns, thread: 0, pass: 114
+All nodes synced in 3580421108 ns
+Pass[115] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 52826 ns
+[15166] 03 Feb 15:16:13.140 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846589	294150443	2116443	135195333	1948958	363713
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610411953	38857607907	2772585462	22418963914	3573726446	778865582
+done in 1481333 ns, fence time is 58111, thread: 0, pass: 115
+total run time is 230171795563 ns, thread: 0, pass: 115
+average read latency is 1057 ns, thread: 0, pass: 115
+average write latency is 1318 ns, thread: 0, pass: 115
+All nodes synced in 5035811373 ns
+Pass[116] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 52373 ns
+[15173] 03 Feb 15:16:18.336 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846589	294151126	2116443	135195650	1948958	363713
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610411953	38857917991	2772585462	22419134204	3573726446	778865582
+done in 1450154 ns, fence time is 55940, thread: 0, pass: 116
+total run time is 230173245717 ns, thread: 0, pass: 116
+average read latency is 1058 ns, thread: 0, pass: 116
+average write latency is 1213 ns, thread: 0, pass: 116
+All nodes synced in 9522167931 ns
+Pass[117] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 54242 ns
+[15189] 03 Feb 15:16:28.020 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846592	294151817	2116443	135195955	1948959	363716
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610424676	38858226328	2772585462	22419329339	3573739058	778923648
+done in 1590420 ns, fence time is 34294, thread: 0, pass: 117
+total run time is 230174836137 ns, thread: 0, pass: 117
+average read latency is 1150 ns, thread: 0, pass: 117
+average write latency is 1539 ns, thread: 0, pass: 117
+All nodes synced in 14697087178 ns
+Pass[118] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 49985 ns
+[15211] 03 Feb 15:16:42.877 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846594	294152492	2116443	135196279	1948959	363717
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610431159	38858521434	2772585462	22419507685	3573739058	778953500
+done in 1502287 ns, fence time is 38312, thread: 0, pass: 118
+total run time is 230176338424 ns, thread: 0, pass: 118
+average read latency is 1090 ns, thread: 0, pass: 118
+average write latency is 1354 ns, thread: 0, pass: 118
+All nodes synced in 15254952980 ns
+Pass[119] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 60688 ns
+[15237] 03 Feb 15:16:58.292 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846599	294153171	2116443	135196599	1948959	363718
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610440809	38858843893	2772585462	22419681378	3573739058	778982987
+done in 1543331 ns, fence time is 33556, thread: 0, pass: 119
+total run time is 230177881755 ns, thread: 0, pass: 119
+average read latency is 1155 ns, thread: 0, pass: 119
+average write latency is 1347 ns, thread: 0, pass: 119
+All nodes synced in 6330661249 ns
+Pass[120] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 69458 ns
+[15250] 03 Feb 15:17:04.784 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846601	294153863	2116444	135196905	1948960	363718
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610447087	38859178503	2772590146	22419847814	3573767320	778982987
+done in 1583843 ns, fence time is 33319, thread: 0, pass: 120
+total run time is 230179465598 ns, thread: 0, pass: 120
+average read latency is 1209 ns, thread: 0, pass: 120
+average write latency is 1315 ns, thread: 0, pass: 120
+All nodes synced in 4565939279 ns
+Pass[121] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 61859 ns
+[15260] 03 Feb 15:17:09.511 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846601	294154548	2116444	135197220	1948960	363718
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610447087	38859490091	2772590146	22420038259	3573767320	778982987
+done in 1502126 ns, fence time is 54482, thread: 0, pass: 121
+total run time is 230180967724 ns, thread: 0, pass: 121
+average read latency is 1109 ns, thread: 0, pass: 121
+average write latency is 1288 ns, thread: 0, pass: 121
+All nodes synced in 283884650 ns
+Pass[122] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 53233 ns
+[15261] 03 Feb 15:17:09.949 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846601	294155227	2116444	135197541	1948960	363718
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610447087	38859787986	2772590146	22420221764	3573767320	778982987
+done in 1472791 ns, fence time is 54640, thread: 0, pass: 122
+total run time is 230182440515 ns, thread: 0, pass: 122
+average read latency is 1035 ns, thread: 0, pass: 122
+average write latency is 1271 ns, thread: 0, pass: 122
+All nodes synced in 73943 ns
+Pass[123] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 12625857 ns
+[15262] 03 Feb 15:17:10.116 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846601	294155916	2116444	135197852	1948960	363718
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610447087	38860088732	2772590146	22420399589	3573767320	778982987
+done in 1437656 ns, fence time is 41225, thread: 0, pass: 123
+total run time is 230183878171 ns, thread: 0, pass: 123
+average read latency is 1039 ns, thread: 0, pass: 123
+average write latency is 1281 ns, thread: 0, pass: 123
+All nodes synced in 245462 ns
+Pass[124] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 50454 ns
+[15263] 03 Feb 15:17:10.273 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846606	294156556	2116451	135198181	1948983	363719
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610462572	38860444263	2772611630	22420581501	3573993500	778991940
+done in 2493082 ns, fence time is 26816, thread: 0, pass: 124
+total run time is 230186371253 ns, thread: 0, pass: 124
+average read latency is 2021 ns, thread: 0, pass: 124
+average write latency is 1355 ns, thread: 0, pass: 124
+All nodes synced in 11857729 ns
+Pass[125] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 54613 ns
+[15264] 03 Feb 15:17:10.440 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846606	294157246	2116451	135198491	1948983	363719
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610462572	38860676992	2772611630	22420703637	3573993500	778991940
+done in 1067171 ns, fence time is 54704, thread: 0, pass: 125
+total run time is 230187438424 ns, thread: 0, pass: 125
+average read latency is 772 ns, thread: 0, pass: 125
+average write latency is 876 ns, thread: 0, pass: 125
+All nodes synced in 1916923 ns
+Pass[126] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 69375 ns
+[15265] 03 Feb 15:17:10.596 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846606	294157929	2116451	135198808	1948983	363719
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610462572	38860977137	2772611630	22420885074	3573993500	778991940
+done in 1474077 ns, fence time is 54102, thread: 0, pass: 126
+total run time is 230188912501 ns, thread: 0, pass: 126
+average read latency is 1037 ns, thread: 0, pass: 126
+average write latency is 1270 ns, thread: 0, pass: 126
+All nodes synced in 251147 ns
+Pass[127] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 54985 ns
+[15266] 03 Feb 15:17:10.751 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846606	294158606	2116451	135199131	1948983	363719
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610462572	38861307067	2772611630	22421067246	3573993500	778991940
+done in 1582061 ns, fence time is 47189, thread: 0, pass: 127
+total run time is 230190494562 ns, thread: 0, pass: 127
+average read latency is 1229 ns, thread: 0, pass: 127
+average write latency is 1261 ns, thread: 0, pass: 127
+All nodes synced in 104513507 ns
+Pass[128] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 65263 ns
+[15267] 03 Feb 15:17:11.010 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846606	294159289	2116451	135199448	1948983	363719
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610462572	38861618324	2772611630	22421239179	3573993500	778991940
+done in 1451301 ns, fence time is 54640, thread: 0, pass: 128
+total run time is 230191945863 ns, thread: 0, pass: 128
+average read latency is 1063 ns, thread: 0, pass: 128
+average write latency is 1216 ns, thread: 0, pass: 128
+All nodes synced in 227662 ns
+Pass[129] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 58870 ns
+[15271] 03 Feb 15:17:11.167 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846606	294159976	2116451	135199761	1948983	363719
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610462572	38861942640	2772611630	22421410367	3573993500	778991940
+done in 1561036 ns, fence time is 56412, thread: 0, pass: 129
+total run time is 230193506899 ns, thread: 0, pass: 129
+average read latency is 1166 ns, thread: 0, pass: 129
+average write latency is 1238 ns, thread: 0, pass: 129
+All nodes synced in 242037 ns
+Pass[130] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 53360 ns
+[15272] 03 Feb 15:17:11.322 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846606	294160667	2116451	135200070	1948983	363719
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610462572	38862248496	2772611630	22421586266	3573993500	778991940
+done in 1447547 ns, fence time is 50824, thread: 0, pass: 130
+total run time is 230194954446 ns, thread: 0, pass: 130
+average read latency is 1040 ns, thread: 0, pass: 130
+average write latency is 1271 ns, thread: 0, pass: 130
+All nodes synced in 7275547 ns
+Pass[131] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 56719 ns
+[15273] 03 Feb 15:17:11.484 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846606	294161349	2116451	135200388	1948983	363719
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610462572	38862640521	2772611630	22421772458	3573993500	778991940
+done in 1549705 ns, fence time is 55423, thread: 0, pass: 131
+total run time is 230196504151 ns, thread: 0, pass: 131
+average read latency is 1175 ns, thread: 0, pass: 131
+average write latency is 1284 ns, thread: 0, pass: 131
+All nodes synced in 683634 ns
+Pass[132] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 52313 ns
+[15274] 03 Feb 15:17:11.639 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846606	294162030	2116451	135200707	1948983	363719
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610462572	38862942346	2772611630	22421953991	3573993500	778991940
+done in 1484889 ns, fence time is 57854, thread: 0, pass: 132
+total run time is 230197989040 ns, thread: 0, pass: 132
+average read latency is 1040 ns, thread: 0, pass: 132
+average write latency is 1268 ns, thread: 0, pass: 132
+All nodes synced in 280219 ns
+Pass[133] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 56776 ns
+[15275] 03 Feb 15:17:11.798 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846606	294162725	2116451	135201012	1948983	363719
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610462572	38863303654	2772611630	22422131143	3573993500	778991940
+done in 1500188 ns, fence time is 56439, thread: 0, pass: 133
+total run time is 230199489228 ns, thread: 0, pass: 133
+average read latency is 1118 ns, thread: 0, pass: 133
+average write latency is 1272 ns, thread: 0, pass: 133
+All nodes synced in 4562412 ns
+Pass[134] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 56156 ns
+[15276] 03 Feb 15:17:11.961 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846606	294163400	2116451	135201337	1948983	363719
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610462572	38863600924	2772611630	22422316803	3573993500	778991940
+done in 1441647 ns, fence time is 53004, thread: 0, pass: 134
+total run time is 230200930875 ns, thread: 0, pass: 134
+average read latency is 1038 ns, thread: 0, pass: 134
+average write latency is 1260 ns, thread: 0, pass: 134
+All nodes synced in 261088 ns
+Pass[135] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 57095 ns
+[15277] 03 Feb 15:17:12.115 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846606	294164090	2116451	135201647	1948983	363719
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610462572	38863917205	2772611630	22422484894	3573993500	778991940
+done in 1483226 ns, fence time is 48140, thread: 0, pass: 135
+total run time is 230202414101 ns, thread: 0, pass: 135
+average read latency is 1130 ns, thread: 0, pass: 135
+average write latency is 1219 ns, thread: 0, pass: 135
+All nodes synced in 2530920 ns
+Pass[136] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 56291 ns
+[15278] 03 Feb 15:17:12.272 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846606	294164772	2116451	135201965	1948983	363719
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610462572	38864232019	2772611630	22422658534	3573993500	778991940
+done in 1488630 ns, fence time is 60385, thread: 0, pass: 136
+total run time is 230203902731 ns, thread: 0, pass: 136
+average read latency is 1066 ns, thread: 0, pass: 136
+average write latency is 1227 ns, thread: 0, pass: 136
+All nodes synced in 487040286 ns
+Pass[137] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 54199 ns
+[15279] 03 Feb 15:17:12.915 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846607	294165454	2116451	135202282	1948983	363720
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610466952	38864531818	2772611630	22422833926	3573993500	779023665
+done in 1535604 ns, fence time is 38952, thread: 0, pass: 137
+total run time is 230205438335 ns, thread: 0, pass: 137
+average read latency is 1160 ns, thread: 0, pass: 137
+average write latency is 1343 ns, thread: 0, pass: 137
+All nodes synced in 98676 ns
+Pass[138] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 46815 ns
+[15283] 03 Feb 15:17:13.069 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846607	294166134	2116451	135202602	1948983	363720
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610466952	38864839154	2772611630	22423008300	3573993500	779023665
+done in 1423439 ns, fence time is 51609, thread: 0, pass: 138
+total run time is 230206861774 ns, thread: 0, pass: 138
+average read latency is 1053 ns, thread: 0, pass: 138
+average write latency is 1219 ns, thread: 0, pass: 138
+All nodes synced in 2193490 ns
+Pass[139] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 56182 ns
+[15284] 03 Feb 15:17:13.225 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846607	294166828	2116451	135202908	1948983	363720
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610466952	38865170202	2772611630	22423178023	3573993500	779023665
+done in 1471386 ns, fence time is 57362, thread: 0, pass: 139
+total run time is 230208333160 ns, thread: 0, pass: 139
+average read latency is 1083 ns, thread: 0, pass: 139
+average write latency is 1233 ns, thread: 0, pass: 139
+All nodes synced in 494032636 ns
+Pass[140] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 138200 ns
+[15285] 03 Feb 15:17:13.876 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846609	294167505	2116452	135203229	1948984	363720
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610472161	38865467097	2772615575	22423356394	3574018807	779023665
+done in 1486185 ns, fence time is 33012, thread: 0, pass: 140
+total run time is 230209819345 ns, thread: 0, pass: 140
+average read latency is 1137 ns, thread: 0, pass: 140
+average write latency is 1254 ns, thread: 0, pass: 140
+All nodes synced in 5453108810 ns
+Pass[141] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 55552 ns
+[15295] 03 Feb 15:17:19.490 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846611	294168198	2116452	135203535	1948984	363721
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610483034	38865824730	2772615575	22423526988	3574018807	779053651
+done in 1556813 ns, fence time is 33625, thread: 0, pass: 141
+total run time is 230211376158 ns, thread: 0, pass: 141
+average read latency is 1179 ns, thread: 0, pass: 141
+average write latency is 1380 ns, thread: 0, pass: 141
+All nodes synced in 5476035760 ns
+Pass[142] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 53689 ns
+[15302] 03 Feb 15:17:25.128 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846612	294168876	2116453	135203855	1948985	363721
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610486929	38866129877	2772620188	22423698500	3574051447	779053651
+done in 1623519 ns, fence time is 39559, thread: 0, pass: 142
+total run time is 230212999677 ns, thread: 0, pass: 142
+average read latency is 1297 ns, thread: 0, pass: 142
+average write latency is 1234 ns, thread: 0, pass: 142
+All nodes synced in 5440632037 ns
+Pass[143] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 2381000 logs
+running trace...
+args has len: 2381000
+Allocator created in 49136 ns
+[15313] 03 Feb 15:17:31.683 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846733	295796300	2116520	135957138	1949139	363793
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610602122	39064665342	2772749659	22543161141	3574643295	779477713
+done in 934219214 ns, fence time is 26328, thread: 0, pass: 143
+total run time is 231147218891 ns, thread: 0, pass: 143
+average read latency is 301 ns, thread: 0, pass: 143
+average write latency is 360 ns, thread: 0, pass: 143
+All nodes synced in 4620721647 ns
+Pass[144] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 8984000 logs
+running trace...
+args has len: 8984000
+Allocator created in 49838 ns
+[15323] 03 Feb 15:17:43.708 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846769	301944031	2116538	138793156	1949169	363996
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610649297	39840658253	2772794397	23002835747	3574768037	780678075
+done in 7074371957 ns, fence time is 26834, thread: 0, pass: 144
+total run time is 238221590848 ns, thread: 0, pass: 144
+average read latency is 309 ns, thread: 0, pass: 144
+average write latency is 369 ns, thread: 0, pass: 144
+All nodes synced in 262877 ns
+Pass[145] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 11353000 logs
+running trace...
+args has len: 11353000
+Allocator created in 50024 ns
+[15336] 03 Feb 15:17:49.690 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850750	0	4846881	309710527	2116586	142379308	1949213	364256
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224593980	0	2610762169	40819726277	2772902049	23587663772	3574921204	782202629
+done in 5490628342 ns, fence time is 25488, thread: 0, pass: 145
+total run time is 243712219190 ns, thread: 0, pass: 145
+average read latency is 308 ns, thread: 0, pass: 145
+average write latency is 369 ns, thread: 0, pass: 145
+All nodes synced in 268088 ns
+Pass[146] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 12631000 logs
+running trace...
+args has len: 12631000
+Allocator created in 66667 ns
+[15346] 03 Feb 15:17:55.038 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850754	0	4846905	318355188	2116604	146365319	1949240	364535
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224596226	0	2610800251	41875742443	2772936568	24216466043	3575038488	783872188
+done in 4924925233 ns, fence time is 23950, thread: 0, pass: 146
+total run time is 248637144423 ns, thread: 0, pass: 146
+average read latency is 296 ns, thread: 0, pass: 146
+average write latency is 355 ns, thread: 0, pass: 146
+All nodes synced in 1128817805 ns
+Pass[147] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 11998000 logs
+running trace...
+args has len: 11998000
+Allocator created in 52831 ns
+[15356] 03 Feb 15:18:01.279 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850754	0	4847086	326559499	2116702	150158535	1949349	364801
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224596226	0	2610930998	42881652949	2773102917	24818860033	3575429751	785373523
+done in 4709181927 ns, fence time is 30649, thread: 0, pass: 147
+total run time is 253346326350 ns, thread: 0, pass: 147
+average read latency is 300 ns, thread: 0, pass: 147
+average write latency is 359 ns, thread: 0, pass: 147
+All nodes synced in 1487563782 ns
+Pass[148] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 12955000 logs
+running trace...
+args has len: 12955000
+Allocator created in 49111 ns
+[15367] 03 Feb 15:18:08.288 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+850846	0	4847988	335392830	2117115	154278981	1949766	365102
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+224626765	0	2611688174	43971200333	2773712210	25468585152	3576819687	786998178
+done in 5104215623 ns, fence time is 25434, thread: 0, pass: 148
+total run time is 258450541973 ns, thread: 0, pass: 148
+average read latency is 302 ns, thread: 0, pass: 148
+average write latency is 360 ns, thread: 0, pass: 148
+All nodes synced in 270293 ns
+Pass[149] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 8191000 logs
+running trace...
+args has len: 8191000
+Allocator created in 51963 ns
+[15377] 03 Feb 15:18:12.551 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+892821	0	4953194	340942289	2130632	156849066	1956352	374480
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+237566675	0	2694918734	44702281661	2791056259	25896277075	3594049391	808919453
+done in 3799044953 ns, fence time is 23922, thread: 0, pass: 149
+total run time is 262249586926 ns, thread: 0, pass: 149
+average read latency is 384 ns, thread: 0, pass: 149
+average write latency is 389 ns, thread: 0, pass: 149
+All nodes synced in 1780226329 ns
+Pass[150] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 9471000 logs
+running trace...
+args has len: 9471000
+Allocator created in 51989 ns
+[15387] 03 Feb 15:18:18.509 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+892821	0	4953359	347424174	2130638	159837949	1956360	374698
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+237566675	0	2695053544	45512505550	2791069095	26381801293	3594087115	810187409
+done in 3796310097 ns, fence time is 30188, thread: 0, pass: 150
+total run time is 266045897023 ns, thread: 0, pass: 150
+average read latency is 307 ns, thread: 0, pass: 150
+average write latency is 369 ns, thread: 0, pass: 150
+All nodes synced in 1289619974 ns
+Pass[151] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 12547000 logs
+running trace...
+args has len: 12547000
+Allocator created in 50165 ns
+[15397] 03 Feb 15:18:25.024 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895182	0	4958991	356008649	2131191	163796771	1956619	375228
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238141783	0	2698854027	46554618137	2791910085	26996970073	3594846951	812315586
+done in 4873307143 ns, fence time is 24310, thread: 0, pass: 151
+total run time is 270919204166 ns, thread: 0, pass: 151
+average read latency is 298 ns, thread: 0, pass: 151
+average write latency is 355 ns, thread: 0, pass: 151
+All nodes synced in 253487 ns
+Pass[152] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 5995000 logs
+running trace...
+args has len: 5995000
+Allocator created in 51233 ns
+[15405] 03 Feb 15:18:27.716 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895182	0	4961523	359992336	2132404	165805528	1957843	375347
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238141783	0	2700399349	47049748202	2793791098	27316002086	3599019087	812993667
+done in 2454739808 ns, fence time is 26715, thread: 0, pass: 152
+total run time is 273373943974 ns, thread: 0, pass: 152
+average read latency is 310 ns, thread: 0, pass: 152
+average write latency is 363 ns, thread: 0, pass: 152
+All nodes synced in 2299714186 ns
+Pass[153] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 50444 ns
+[15416] 03 Feb 15:18:30.179 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895182	0	4961527	359992916	2132408	165805927	1957859	375348
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238141783	0	2700407235	47050101132	2793806809	27316264188	3599105166	813019295
+done in 2090035 ns, fence time is 27228, thread: 0, pass: 153
+total run time is 273376034009 ns, thread: 0, pass: 153
+average read latency is 1697 ns, thread: 0, pass: 153
+average write latency is 1452 ns, thread: 0, pass: 153
+All nodes synced in 4827630817 ns
+Pass[154] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 50012 ns
+[15423] 03 Feb 15:18:35.168 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895182	0	4961534	359993494	2132414	165806333	1957869	375348
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238141783	0	2700424318	47050476849	2793830187	27316492548	3599177540	813019295
+done in 2098849 ns, fence time is 30981, thread: 0, pass: 154
+total run time is 273378132858 ns, thread: 0, pass: 154
+average read latency is 1671 ns, thread: 0, pass: 154
+average write latency is 1370 ns, thread: 0, pass: 154
+All nodes synced in 4593722216 ns
+Pass[155] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 52272 ns
+[15433] 03 Feb 15:18:39.923 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895182	0	4961549	359994104	2132423	165806708	1957874	375349
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238141783	0	2700460065	47050875731	2793876624	27316732971	3599204763	813024589
+done in 1913350 ns, fence time is 30344, thread: 0, pass: 155
+total run time is 273380046208 ns, thread: 0, pass: 155
+average read latency is 1483 ns, thread: 0, pass: 155
+average write latency is 1521 ns, thread: 0, pass: 155
+All nodes synced in 4694532248 ns
+Pass[156] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 49993 ns
+[15440] 03 Feb 15:18:44.777 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895182	0	4961552	359994705	2132430	165807088	1957886	375349
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238141783	0	2700470089	47051260777	2793914264	27316946765	3599273984	813024589
+done in 1906022 ns, fence time is 30140, thread: 0, pass: 156
+total run time is 273381952230 ns, thread: 0, pass: 156
+average read latency is 1739 ns, thread: 0, pass: 156
+average write latency is 1342 ns, thread: 0, pass: 156
+All nodes synced in 4525840666 ns
+Pass[157] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 52023 ns
+[15447] 03 Feb 15:18:49.464 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895182	0	4961562	359995289	2132436	165807492	1957892	375349
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238141783	0	2700492394	47051632226	2793934212	27317172649	3599326487	813024589
+done in 1842983 ns, fence time is 29523, thread: 0, pass: 157
+total run time is 273383795213 ns, thread: 0, pass: 157
+average read latency is 1679 ns, thread: 0, pass: 157
+average write latency is 1299 ns, thread: 0, pass: 157
+All nodes synced in 4828693229 ns
+Pass[158] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 56000 logs
+running trace...
+args has len: 56000
+Allocator created in 55996 ns
+[15457] 03 Feb 15:18:54.560 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895182	0	4961622	360030042	2132504	165828479	1958082	375351
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238141783	0	2700569286	47059552899	2794105509	27323194357	3600235288	813031851
+done in 108564953 ns, fence time is 26425, thread: 0, pass: 158
+total run time is 273492360166 ns, thread: 0, pass: 158
+average read latency is 638 ns, thread: 0, pass: 158
+average write latency is 654 ns, thread: 0, pass: 158
+All nodes synced in 4924742709 ns
+Pass[159] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 50581 ns
+[15464] 03 Feb 15:18:59.645 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895182	0	4961636	360030633	2132513	165828864	1958096	375352
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238141783	0	2700596662	47059876882	2794136874	27323402023	3600331196	813040916
+done in 2328189 ns, fence time is 33339, thread: 0, pass: 159
+total run time is 273494688355 ns, thread: 0, pass: 159
+average read latency is 1821 ns, thread: 0, pass: 159
+average write latency is 1354 ns, thread: 0, pass: 159
+All nodes synced in 4494191139 ns
+Pass[160] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 76662 ns
+[15474] 03 Feb 15:19:04.301 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895182	0	4961636	360031292	2132514	165829202	1958098	375352
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238141783	0	2700596662	47060148488	2794140764	27323584414	3600367345	813040916
+done in 1492002 ns, fence time is 29604, thread: 0, pass: 160
+total run time is 273496180357 ns, thread: 0, pass: 160
+average read latency is 1125 ns, thread: 0, pass: 160
+average write latency is 1227 ns, thread: 0, pass: 160
+All nodes synced in 4510387363 ns
+Pass[161] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 54628 ns
+[15481] 03 Feb 15:19:08.985 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895182	0	4961638	360031945	2132515	165829546	1958100	375352
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238141783	0	2700607356	47060418975	2794145338	27323771474	3600401117	813040916
+done in 13200827 ns, fence time is 11739807, thread: 0, pass: 161
+total run time is 273509381184 ns, thread: 0, pass: 161
+average read latency is 1137 ns, thread: 0, pass: 161
+average write latency is 1256 ns, thread: 0, pass: 161
+All nodes synced in 4720047501 ns
+Pass[162] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 55943 ns
+[15491] 03 Feb 15:19:13.865 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895182	0	4961638	360032601	2132516	165829886	1958102	375353
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238141783	0	2700607356	47060685714	2794150021	27323955675	3600435421	813047807
+done in 1481160 ns, fence time is 29017, thread: 0, pass: 162
+total run time is 273510862344 ns, thread: 0, pass: 162
+average read latency is 1117 ns, thread: 0, pass: 162
+average write latency is 1256 ns, thread: 0, pass: 162
+All nodes synced in 4752822097 ns
+Pass[163] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 54641 ns
+[15498] 03 Feb 15:19:18.780 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895182	0	4961638	360033256	2132516	165830230	1958103	375353
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238141783	0	2700607356	47060961673	2794150021	27324140331	3600461291	813047807
+done in 1496718 ns, fence time is 35846, thread: 0, pass: 163
+total run time is 273512359062 ns, thread: 0, pass: 163
+average read latency is 1102 ns, thread: 0, pass: 163
+average write latency is 1310 ns, thread: 0, pass: 163
+All nodes synced in 3146391592 ns
+Pass[164] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 51724 ns
+[15505] 03 Feb 15:19:22.089 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895182	0	4961638	360033912	2132516	165830573	1958104	375353
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238141783	0	2700607356	47061243218	2794150021	27324331110	3600481548	813047807
+done in 1692491 ns, fence time is 41326, thread: 0, pass: 164
+total run time is 273514051553 ns, thread: 0, pass: 164
+average read latency is 1099 ns, thread: 0, pass: 164
+average write latency is 1238 ns, thread: 0, pass: 164
+All nodes synced in 4898842550 ns
+Pass[165] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 63811 ns
+[15512] 03 Feb 15:19:27.149 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895182	0	4961638	360034568	2132517	165830914	1958106	375353
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238141783	0	2700607356	47061510622	2794153471	27324521647	3600511888	813047807
+done in 1484419 ns, fence time is 33364, thread: 0, pass: 165
+total run time is 273515535972 ns, thread: 0, pass: 165
+average read latency is 1109 ns, thread: 0, pass: 165
+average write latency is 1266 ns, thread: 0, pass: 165
+All nodes synced in 4769599477 ns
+Pass[166] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 52953 ns
+[15522] 03 Feb 15:19:32.080 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895182	0	4961641	360035222	2132518	165831258	1958107	375353
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238141783	0	2700614285	47061784397	2794157112	27324708584	3600542921	813047807
+done in 1495899 ns, fence time is 32491, thread: 0, pass: 166
+total run time is 273517031871 ns, thread: 0, pass: 166
+average read latency is 1138 ns, thread: 0, pass: 166
+average write latency is 1242 ns, thread: 0, pass: 166
+All nodes synced in 4689365469 ns
+Pass[167] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 457000 logs
+running trace...
+args has len: 457000
+Allocator created in 50375 ns
+[15529] 03 Feb 15:19:37.138 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895182	0	4966590	360301883	2132533	166020841	1958432	375769
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238141783	0	2702893889	47097102458	2794183349	27357972827	3601687089	814827959
+done in 203337694 ns, fence time is 21322, thread: 0, pass: 167
+total run time is 273720369565 ns, thread: 0, pass: 167
+average read latency is 341 ns, thread: 0, pass: 167
+average write latency is 401 ns, thread: 0, pass: 167
+All nodes synced in 4629966177 ns
+Pass[168] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 5676000 logs
+running trace...
+args has len: 5676000
+Allocator created in 37166 ns
+[15539] 03 Feb 15:19:45.635 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895301	0	4970757	363686847	2132609	168310699	1958895	376283
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238172406	0	2705147173	47567446995	2794321290	27762127145	3603420739	816880576
+done in 3655123308 ns, fence time is 40343, thread: 0, pass: 168
+total run time is 277375492873 ns, thread: 0, pass: 168
+average read latency is 335 ns, thread: 0, pass: 168
+average write latency is 397 ns, thread: 0, pass: 168
+All nodes synced in 1144163175 ns
+Pass[169] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 54983 ns
+[15546] 03 Feb 15:19:46.944 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895301	0	4970764	363687784	2132609	168310755	1958901	376284
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238172406	0	2705159544	47567866249	2794321290	27762163859	3603469315	816887095
+done in 1562873 ns, fence time is 30913, thread: 0, pass: 169
+total run time is 277377055746 ns, thread: 0, pass: 169
+average read latency is 1233 ns, thread: 0, pass: 169
+average write latency is 1567 ns, thread: 0, pass: 169
+All nodes synced in 4914528832 ns
+Pass[170] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 54619 ns
+[15556] 03 Feb 15:19:52.020 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895301	0	4970769	363688772	2132610	168310763	1958904	376284
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238172406	0	2705169323	47568303124	2794325124	27762170255	3603504268	816887095
+done in 1740383 ns, fence time is 40632, thread: 0, pass: 170
+total run time is 277378796129 ns, thread: 0, pass: 170
+average read latency is 1170 ns, thread: 0, pass: 170
+average write latency is 2709 ns, thread: 0, pass: 170
+All nodes synced in 5134198878 ns
+Pass[171] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 1000 logs
+running trace...
+args has len: 1000
+Allocator created in 55813 ns
+[15563] 03 Feb 15:19:57.317 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+895301	0	4970769	363689770	2132610	168310763	1958906	376284
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+238172406	0	2705169323	47568719760	2794325124	27762170255	3603537363	816887095
+done in 1463383 ns, fence time is 48418, thread: 0, pass: 171
+total run time is 277380259512 ns, thread: 0, pass: 171
+average read latency is 1102 ns, thread: 0, pass: 171
+All nodes synced in 5296275940 ns
+Pass[172] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 3080000 logs
+running trace...
+args has len: 3080000
+Allocator created in 47875 ns
+[15573] 03 Feb 15:20:04.270 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+910254	0	5008531	366180440	2139297	168873107	1962896	377640
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+241728333	0	2732699146	47884802614	2803391909	27855624733	3614665808	821028049
+done in 1400771675 ns, fence time is 21455, thread: 0, pass: 172
+total run time is 278781031187 ns, thread: 0, pass: 172
+average read latency is 375 ns, thread: 0, pass: 172
+average write latency is 404 ns, thread: 0, pass: 172
+All nodes synced in 3785527671 ns
+Pass[173] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 12087000 logs
+running trace...
+args has len: 12087000
+Allocator created in 50829 ns
+[15583] 03 Feb 15:20:13.371 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+910254	0	5011910	375907270	2140247	171230847	1964164	377852
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+241728333	0	2734753672	49078594287	2804986110	28226131605	3619185126	821893219
+done in 4660764580 ns, fence time is 25999, thread: 0, pass: 173
+total run time is 283441795767 ns, thread: 0, pass: 173
+average read latency is 302 ns, thread: 0, pass: 173
+average write latency is 358 ns, thread: 0, pass: 173
+All nodes synced in 1992943238 ns
+Pass[174] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 12003000 logs
+running trace...
+args has len: 12003000
+Allocator created in 49039 ns
+[15593] 03 Feb 15:20:20.626 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+920003	0	5031238	385597968	2144767	173524314	1967410	379172
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+243923522	0	2749097201	50253644388	2811461297	28586308533	3628645893	825159252
+done in 4697577790 ns, fence time is 25922, thread: 0, pass: 174
+total run time is 288139373557 ns, thread: 0, pass: 174
+average read latency is 308 ns, thread: 0, pass: 174
+average write latency is 363 ns, thread: 0, pass: 174
+All nodes synced in 600586957 ns
+Pass[175] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 12055000 logs
+running trace...
+args has len: 12055000
+Allocator created in 54793 ns
+[15603] 03 Feb 15:20:26.581 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+926705	0	5042072	395252346	2147272	175913484	1969281	379546
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+245248517	0	2756927763	51451346824	2815221436	28973420241	3634869267	826288915
+done in 4820699788 ns, fence time is 22279, thread: 0, pass: 175
+total run time is 292960073345 ns, thread: 0, pass: 175
+average read latency is 311 ns, thread: 0, pass: 175
+average write latency is 368 ns, thread: 0, pass: 175
+All nodes synced in 448326003 ns
+Pass[176] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 12062000 logs
+running trace...
+args has len: 12062000
+Allocator created in 47223 ns
+[15613] 03 Feb 15:20:33.240 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+1003664	0	5214067	404879741	2175750	178222022	1985444	384013
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+260206769	0	2872514374	52662304467	2853196795	29355864443	3676891429	838728155
+done in 5634032043 ns, fence time is 19396, thread: 0, pass: 176
+total run time is 298594105388 ns, thread: 0, pass: 176
+average read latency is 379 ns, thread: 0, pass: 176
+average write latency is 399 ns, thread: 0, pass: 176
+All nodes synced in 260106 ns
+Pass[177] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 12343000 logs
+running trace...
+args has len: 12343000
+Allocator created in 48556 ns
+[15623] 03 Feb 15:20:39.770 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+1127897	0	5501214	414795144	2218810	180449973	2010538	391272
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+284404730	0	3063432297	53932369627	2911161990	29742852658	3745229234	859799586
+done in 6040226923 ns, fence time is 29385, thread: 0, pass: 177
+total run time is 304634332311 ns, thread: 0, pass: 177
+average read latency is 411 ns, thread: 0, pass: 177
+average write latency is 422 ns, thread: 0, pass: 177
+All nodes synced in 238652 ns
+Pass[178] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 13052000 logs
+running trace...
+args has len: 13052000
+Allocator created in 56629 ns
+[15636] 03 Feb 15:20:45.505 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+1131672	0	5531103	425725134	2224303	182553706	2018620	392199
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+285138138	0	3079275476	55289830283	2919235272	30088957560	3769935973	864081188
+done in 5253683189 ns, fence time is 28457, thread: 0, pass: 178
+total run time is 309888015500 ns, thread: 0, pass: 178
+average read latency is 318 ns, thread: 0, pass: 178
+average write latency is 374 ns, thread: 0, pass: 178
+All nodes synced in 270308 ns
+Pass[179] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 12743000 logs
+running trace...
+args has len: 12743000
+Allocator created in 66575 ns
+[15643] 03 Feb 15:20:51.073 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+1136196	0	5584800	436623316	2235286	184372545	2028167	393124
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+286469595	0	3111065409	56643312589	2934981772	30380438194	3797629777	866936460
+done in 5162427736 ns, fence time is 20656, thread: 0, pass: 179
+total run time is 315050443236 ns, thread: 0, pass: 179
+average read latency is 325 ns, thread: 0, pass: 179
+average write latency is 374 ns, thread: 0, pass: 179
+All nodes synced in 657524657 ns
+Pass[180] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 11991000 logs
+running trace...
+args has len: 11991000
+Allocator created in 47377 ns
+[15656] 03 Feb 15:20:57.444 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+1147058	0	5637267	447226815	2243957	185730821	2036212	394769
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+289566350	0	3143984206	57977333325	2948093748	30607509992	3819190464	872249462
+done in 4946220299 ns, fence time is 24661, thread: 0, pass: 180
+total run time is 319996663535 ns, thread: 0, pass: 180
+average read latency is 331 ns, thread: 0, pass: 180
+average write latency is 393 ns, thread: 0, pass: 180
+All nodes synced in 250858 ns
+Pass[181] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 11981000 logs
+running trace...
+args has len: 11981000
+Allocator created in 53399 ns
+[15663] 03 Feb 15:21:02.585 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+1147379	0	5643424	457665459	2245487	187268863	2038483	394961
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+289650676	0	3147536170	59286789221	2950682138	30855586605	3826217662	872917045
+done in 4674719614 ns, fence time is 23790, thread: 0, pass: 181
+total run time is 324671383149 ns, thread: 0, pass: 181
+average read latency is 311 ns, thread: 0, pass: 181
+average write latency is 365 ns, thread: 0, pass: 181
+All nodes synced in 709479573 ns
+Pass[182] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 12020000 logs
+running trace...
+args has len: 12020000
+Allocator created in 53960 ns
+[15673] 03 Feb 15:21:08.183 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+1147380	0	5645508	467963377	2246620	188987954	2040264	395037
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+289651910	0	3148652896	60539789563	2952523809	31125908912	3832339241	873231901
+done in 4654696093 ns, fence time is 30533, thread: 0, pass: 182
+total run time is 329326079242 ns, thread: 0, pass: 182
+average read latency is 303 ns, thread: 0, pass: 182
+average write latency is 357 ns, thread: 0, pass: 182
+All nodes synced in 676719548 ns
+Pass[183] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 12960000 logs
+running trace...
+args has len: 12960000
+Allocator created in 54030 ns
+[15683] 03 Feb 15:21:14.184 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+1147970	0	5658443	479053272	2250736	190848401	2045126	395127
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+289808403	0	3156645751	61925904259	2958881899	31422013117	3847102853	873499535
+done in 5086243361 ns, fence time is 23241, thread: 0, pass: 183
+total run time is 334412322603 ns, thread: 0, pass: 183
+average read latency is 312 ns, thread: 0, pass: 183
+average write latency is 365 ns, thread: 0, pass: 183
+All nodes synced in 802415629 ns
+Pass[184] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 8973000 logs
+running trace...
+args has len: 8973000
+Allocator created in 54570 ns
+[15693] 03 Feb 15:21:23.292 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+1150388	0	5686521	485813960	2259345	193036823	2057180	395936
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+290515269	0	3173540419	62794219577	2970663514	31766216711	3895768226	875784402
+done in 8099231115 ns, fence time is 22511, thread: 0, pass: 184
+total run time is 342511553718 ns, thread: 0, pass: 184
+average read latency is 358 ns, thread: 0, pass: 184
+average write latency is 371 ns, thread: 0, pass: 184
+All nodes synced in 201322 ns
+Pass[185] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 12121000 logs
+running trace...
+args has len: 12121000
+Allocator created in 56030 ns
+[15706] 03 Feb 15:21:28.266 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+1164015	0	5719969	496886367	2264636	194059452	2063064	397098
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+293482316	0	3193792769	64152984657	2978119144	31930291835	3911529161	879207098
+done in 4741866136 ns, fence time is 21456, thread: 0, pass: 185
+total run time is 347253419854 ns, thread: 0, pass: 185
+average read latency is 315 ns, thread: 0, pass: 185
+average write latency is 373 ns, thread: 0, pass: 185
+All nodes synced in 616102877 ns
+Pass[186] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 11992000 logs
+running trace...
+args has len: 11992000
+Allocator created in 52045 ns
+[15716] 03 Feb 15:21:33.770 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+1165618	0	5724389	507554410	2266151	195378551	2064630	397272
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+293839676	0	3196603170	65461924242	2980526604	32140956078	3915671889	879747088
+done in 4639270816 ns, fence time is 22916, thread: 0, pass: 186
+total run time is 351892690670 ns, thread: 0, pass: 186
+average read latency is 303 ns, thread: 0, pass: 186
+average write latency is 364 ns, thread: 0, pass: 186
+All nodes synced in 782609289 ns
+Pass[187] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 12065000 logs
+running trace...
+args has len: 12065000
+Allocator created in 49604 ns
+[15726] 03 Feb 15:21:40.197 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+1170510	0	5739587	517916754	2268624	197070895	2067029	397820
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+295061047	0	3206904423	66756749543	2984501969	32413961109	3921946582	881417754
+done in 4846789089 ns, fence time is 24693, thread: 0, pass: 187
+total run time is 356739479759 ns, thread: 0, pass: 187
+average read latency is 315 ns, thread: 0, pass: 187
+average write latency is 373 ns, thread: 0, pass: 187
+All nodes synced in 287413 ns
+Pass[188] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 11923000 logs
+running trace...
+args has len: 11923000
+Allocator created in 52719 ns
+[15736] 03 Feb 15:21:45.488 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+1175883	0	5757275	528123674	2272418	198773183	2071019	398455
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+296225985	0	3217941010	68050311048	2990393353	32690267913	3932014512	883317703
+done in 4800155012 ns, fence time is 25801, thread: 0, pass: 188
+total run time is 361539634771 ns, thread: 0, pass: 188
+average read latency is 321 ns, thread: 0, pass: 188
+average write latency is 375 ns, thread: 0, pass: 188
+All nodes synced in 89374948 ns
+Pass[189] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 12652000 logs
+running trace...
+args has len: 12652000
+Allocator created in 49446 ns
+[15743] 03 Feb 15:21:51.083 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+1178288	0	5773028	538720712	2277509	200814201	2077141	398781
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+296721527	0	3228005067	69371801631	2997990742	33015643846	3948841062	884244052
+done in 5111463703 ns, fence time is 24678, thread: 0, pass: 189
+total run time is 366651098474 ns, thread: 0, pass: 189
+average read latency is 315 ns, thread: 0, pass: 189
+average write latency is 363 ns, thread: 0, pass: 189
+All nodes synced in 262520 ns
+Pass[190] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 11989000 logs
+running trace...
+args has len: 11989000
+Allocator created in 59242 ns
+[15753] 03 Feb 15:21:56.693 - [worker_handle.cc:229-CollectCacheStatistics()] Cache Statistics
+rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+1202301	0	5917214	548840088	2293695	202625782	2091209	402557
+Time for: rh1 rh2 rh3 rh4 wh1 wh2 rm wm
+301801448	0	3305573969	70627511152	3022339825	33310534132	3989106684	895656478
+done in 5124601817 ns, fence time is 22844, thread: 0, pass: 190
+total run time is 371775700291 ns, thread: 0, pass: 190
+average read latency is 346 ns, thread: 0, pass: 190
+average write latency is 396 ns, thread: 0, pass: 190
+All nodes synced in 165713421 ns
+Pass[191] Node[2]: loading log...
+Thread[0]: loading log...
+finish loading 12151000 logs
+running trace...
+args has len: 12151000
+Allocator created in 49160 ns
