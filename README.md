@@ -1,21 +1,12 @@
 # Overview
+ 
+ This is the evaluation repo for MIND against mind. 
+ 
+ We made several modifications to the [original GAM repo](https://github.com/ooibc88/gam), including fixing bugs and implementing memory trace applications.
+ 
+ Please follow the installation guide in the original GAM repo.
 
-This is the evaluation repo for MIND against mind.
 
-We made several modifications to the [GAM repo](https://github.com/ooibc88/gam), including fixing bugs and implementing memory trace applications.
-------------------------------------------------------------------------------
-GAM (Globally Addressable Memory) is a distributed memory management platform
-which provides a global, unified memory space over a cluster of nodes connected
-via RDMA (Remote Direct Memory Access).  GAM allows nodes to employ a cache to
-exploit the locality in global memory accesses, and uses an RDMA-based,
-distributed cache coherency protocol to keep cached data consistent.  Unlike
-existing distributed memory management systems which typically employ Release
-Consistency and require synchronization primitives to be explicitly called for
-data consistency, GAM enforces the PSO (Partial Store Order) memory model which
-ensures data consistency automatically and relaxes the Read-After-Write and
-Write-After-Write ordering to remove costly writes from critical program
-execution paths. For more information, please refer to our [VLDB'18
-paper](#paper).
 
 # Build & Usage
 ## Prerequisite
@@ -28,97 +19,87 @@ paper](#paper).
 First build `libcuckoo` in the `lib/libcuckoo` directory by following the
 `README.md` file in that directory, and then go to the `src` directory and run `make`
 therein.
-```
+```bash
   cd src;
-  make -j;
+  make -j 8;
 ```
 
-### Test and Micro Benchmark
-We provide an extensive set of tools to test and benchmark GAM. These tools are
-contained in the `test` directory, and also serve the purpose of demonstrating
-the usage of the APIs provided in GAM. To build them, simply run `make -j` in
-the `test` directory.
-
-A script `benchmark-all.sh` is provided in the `script` directory to facilitate
-the benchmarking of GAM. This script is also used to generate the result of the
-micro benchmark in the [GAM paper](#paper). To run this script, a `slaves` file needs to
-be provided within the same directory. Each line of the `slaves` file contains
-the ip address and port (separated by space) of a node that is involved in the
-benchmarking, and the number of lines contained in the `slaves` file should
-be no smaller than that of nodes for benchmarking.
-There are multiple parameters that can be varied for
-a thorough benchmarking, please refer to [our paper](#paper) for detail.
-
-## Applications
-We build two distributed applications on top of GAM by using the APIs GAM
-provide, a distributed key-value store and distributed transaction processing
-engine. To build them, simply run the below commands:
-```
-  cd dht
-  make -j
-  cd ../database
-  make -j
+## GAM benchmark code
+```bash
+  cd gam/test
+  make -j 8;
 ```
 
-### Macro Benchmark
-There is a script `kv-benchmark.sh` provided in the `dht` directory to
-benchmark the key-value store. To run it, please change the variables in the
-script according to the experimental setting. There are also several parameters
-that can be varied for benchmarking, such as thread number, get ratio and
-number of nodes. Please refer to the [GAM paper](#paper) and the script for detail. 
+# Benchmark
 
-To run the TPCC benchmark, please follow the instructions of the `README` file
-in the `database` directory.
+Please first install GAM on the servers required for the benchmark. (Mostly a few compute servers, one memory server)
 
-## FaRM
-We implement the [FaRM](#farm) system as a baseline for macro benchmark. To build
-the FaRM codebase, please run the below command:
-```
-  git checkout farm 
-  cd src
-  make -j
-```
 
-We also provide several tools to test and benchmark our FaRM implementation.
-Please go to the `test` directory, and `make -j` therein to generate those
-tools. All tools but `farm-cluster-test` can be run directly. For
-`farm-cluster-test`, a script `run_farm_cluster.sh` is provided in `scripts`
-directory. Please change the variables in that script according to the
-deployment environment.
+Please gather the memory trace files following the instructions here https://github.com/shsym/mind/tree/main/tools/prepare_traces.
 
-# References
-<a name="paper"></a>
-[1] Qingchao Cai, Wentian Guo, Hao Zhang, Gang Chen, Beng Chin Ooi, Kian-Lee Tan, Yong Meng Teo, and Sheng Wang. *Efficient Distributed Memory Management with RDMA and Caching*. PVLDB, 11 (11): 1604- 1617, 2018. DOI: https://doi.org/10.14778/3236187.3236209.
+We currently don't support fast scripts to launch the benchmark, therefore we need to launch scripts on each of the servers.
 
-<a name="farm"></a>
-[2] Aleksandar Dragojević, Dushyanth Narayanan, Orion Hodson, and Miguel Castro. *FaRM: Fast remote memory*. Proceedings of the 11th USENIX Conference on Networked Systems Design and Implementation. 2014.
+## Cluster setup
 
-# License
-Copyright (c) 2018 The GAM Authors 
+This benchmark requires (1, 2, 4, 8) compute servers, and one memory server.
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+The first compute server (index: 0) also acts as the GAM controller.
 
-```
-  http://www.apache.org/licenses/LICENSE-2.0
+The normal switch program is required
+
+## Scripts
+Usage:
+```bash
+cd gam/test
+# This requires sudo permission to access the logs in SSD
+sudo ./gam_profile_test $TOTAL_SERVERS $NUM_THREAD_PER_SERVER $CONTROLLER_IP $WORKER_IP $CONTROLLER_PORT $WORKER_PORT $IS_CONTROLLER $IS_COMPUTE_NODE LOCAL_CACHE_RATIO $WORKSET_SIZE $TOTAL_NUM_COMPUTE_NODE $TRACE_FILES.... &> $RESULT_FILE
 ```
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+Parameters:
 
-# Notice
-The TPCC benchmark code in the `database` directory is adapted from an open
-source project Cavalia, which can be found at
-```
-  https://github.com/Cavalia/Cavalia
-```
-In addition, this project uses the event loop implementation of Redis, which can
-be found at 
-```
-  https://redis.io/
-```
+$TOTAL_SERVERs = total number of servers in the cluster(compute + memory)
 
+$NUM_THREAD_PER_SERVER = number of compute threads in the server, needs to match number of trace files (1 thread per trace file)
+
+$CONTROLLER_IP = Controller IP
+
+$WORKER_IP = Current Worker IP
+
+$CONTROLLER_PORT = Controller port
+
+$WORKER_PORT = Worker port
+
+$IS_CONTROLLER = 1 for controller, 0 for other servers
+
+$IS_COMPUTE_NODE = 1 for compute node, 0 for memory node
+
+$LOCAL_CACHE_RATIO = Percentage of entire workload memory footprint as local cache. (Local cache in bytes = $LOCAL_CACHE_RATIO * WORKSET_SIZE)
+
+$WORKSET_SIZE = Number of bytes that the workload will cover (whole range, in bytes) -> (ma: 6442450944, mc: 6442450944, tf: 6442450944, graphchi: 6442450944)
+
+$TOTAL_NUM_COMPUTE_NODE = total numebr of compute nodes
+
+$TRACE_FILES... = all trace files (PUT DUMMY FILES FOR MEMORY SERVER)
+
+$RESULT_FILE = the result collection
+
+
+One thing to note is that $WORKSET_SIZE can be arbitrary large as long as the memory server has enough memory (default 20GB), as we don't use the redundant memory anyway. 
+
+Just keep in mind that local cache size should always be $WORKSET_SIZE X $LOCAL_CACHE_RATIO
+
+## Example
+Here is one example for setting up a single compute node single memory node benchmark of memcached_a:
+
+### Server 1: compute server and GAM controller
+```bash
+sudo ./gam_profile_test 2 10 10.10.10.201 10.10.10.201 1231 1234 1 1 0.083 6442450944 1 /memcached_a/memcached_a_0_0 /memcached_a/memcached_a_1_0 /memcached_a/memcached_a_2_0 /memcached_a/memcached_a_3_0 /memcached_a/memcached_a_4_0 /memcached_a/memcached_a_5_0 /memcached_a/memcached_a_6_0 /memcached_a/memcached_a_7_0 /memcached_a/memcached_a_8_0 /memcached_a/memcached_a_9_0 &> 1C_1M_10T_512MB_memcached_a
+```
+### Server 2: memory server
+```bash
+# No sudo requirement for memory server
+# ~/tensorflow_0_0 ~/tensorflow_1_0 ~/tensorflow_2_0 ~/tensorflow_3_0 are just dummy files
+# WORKSET_SIZE, LOCAL_CACHE_RATIO, NUM_THREAD_PER_SERVER are not used
+# NUM_THREAD_PER_SERVER need to match number of dummy trace files
+ ./gam_profile_test 2 4 10.10.10.201 10.10.10.221 1231 1234 0 0 0.5 2147483648 1 ~/tensorflow_0_0 ~/tensorflow_1_0 ~/tensorflow_2_0 ~/tensorflow_3_0
+ ```
