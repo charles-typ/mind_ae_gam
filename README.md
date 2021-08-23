@@ -84,7 +84,7 @@ $TRACE_FILES... = all trace files (PUT DUMMY FILES FOR MEMORY SERVER)
 $RESULT_FILE = the result collection
 
 
-One thing to note is that $WORKSET_SIZE can be arbitrary large as long as the memory server has enough memory (default 20GB), as we don't use the redundant memory anyway. 
+One thing to note is that $WORKSET_SIZE can be arbitrary large as long as the memory server has enough memory (default 10GB, modify it [here](https://github.com/charles-typ/mind_ae_gam/blob/132aec5fc4cd035670dcc749b4e9ea51c3597cb5/test/gam_profile_test.cc#L551), as we don't use the redundant memory anyway. 
 
 Just keep in mind that local cache size should always be $WORKSET_SIZE X $LOCAL_CACHE_RATIO
 
