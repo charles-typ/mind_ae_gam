@@ -1,5 +1,9 @@
 # Overview
 
+This is the evaluation repo for MIND against mind.
+
+We made several modifications to the [GAM repo](https://github.com/ooibc88/gam), including fixing bugs and implementing memory trace applications.
+------------------------------------------------------------------------------
 GAM (Globally Addressable Memory) is a distributed memory management platform
 which provides a global, unified memory space over a cluster of nodes connected
 via RDMA (Remote Direct Memory Access).  GAM allows nodes to employ a cache to
