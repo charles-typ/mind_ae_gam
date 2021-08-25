@@ -45,7 +45,7 @@ This benchmark requires (1, 2, 4, 8) compute servers, and one memory server.
 
 The first compute server (index: 0) also acts as the GAM controller.
 
-The normal switch program is required
+The switch program should not be MIND's program which modifies RDMA packet headers.
 
 ## Scripts
 Usage:
