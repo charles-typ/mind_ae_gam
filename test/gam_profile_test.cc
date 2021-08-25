@@ -162,6 +162,7 @@ int node_id = -1;
 int num_threads;
 GAddr *remote;
 int resize_ratio = 1;
+int max_pass;
 
 
 static int calc_mask_sum(unsigned int mask) {
@@ -463,7 +464,8 @@ enum {
   arg_remote_ratio = 9,
   arg_benchmark_size = 10,
   arg_num_comp_nodes = 11,
-  arg_log1 = 12,
+  arg_max_pass = 12,
+  arg_log1 = 13,
 };
 
 int main(int argc, char **argv) {
@@ -477,6 +479,7 @@ int main(int argc, char **argv) {
   num_comp_nodes = atoi(argv[arg_num_comp_nodes]);
   num_nodes = atoi(argv[arg_node_cnt]);
   num_threads = atoi(argv[arg_num_threads]);
+  max_pass = atoi(argv[arg_max_pass]);
 #ifdef single_thread_test
     num_threads = 1;
     num_comp_nodes = 1;
@@ -708,7 +711,7 @@ int main(int argc, char **argv) {
           all_done = false;
         }
       }
-      if (all_done) {
+      if (all_done || pass >= max_pass) {
         printf("All done here\n");
         break;
       }

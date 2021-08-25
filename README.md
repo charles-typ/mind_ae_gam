@@ -52,7 +52,7 @@ Usage:
 ```bash
 cd gam/test
 # This requires sudo permission to access the logs in SSD
-sudo ./gam_profile_test $TOTAL_SERVERS $NUM_THREAD_PER_SERVER $CONTROLLER_IP $WORKER_IP $CONTROLLER_PORT $WORKER_PORT $IS_CONTROLLER $IS_COMPUTE_NODE LOCAL_CACHE_RATIO $WORKSET_SIZE $TOTAL_NUM_COMPUTE_NODE $TRACE_FILES.... &> $RESULT_FILE
+sudo ./gam_profile_test $TOTAL_SERVERS $NUM_THREAD_PER_SERVER $CONTROLLER_IP $WORKER_IP $CONTROLLER_PORT $WORKER_PORT $IS_CONTROLLER $IS_COMPUTE_NODE LOCAL_CACHE_RATIO $WORKSET_SIZE $TOTAL_NUM_COMPUTE_NODE $MAX_PASS $TRACE_FILES.... &> $RESULT_FILE
 ```
 
 Parameters:
@@ -78,6 +78,8 @@ $LOCAL_CACHE_RATIO = Percentage of entire workload memory footprint as local cac
 $WORKSET_SIZE = Number of bytes that the workload will cover (whole range, in bytes) -> (ma: 6442450944, mc: 6442450944, tf: 6442450944, graphchi: 6442450944)
 
 $TOTAL_NUM_COMPUTE_NODE = total numebr of compute nodes
+
+$MAX_PASS = maximum number of passes of trace to run. We have different number of logs for each application: (ma: 35K, MC: 20K, TF: 50K, GC: 50K). However, user can restricted the number of passes they want to run to limit the entire execution time.
 
 $TRACE_FILES... = all trace files (PUT DUMMY FILES FOR MEMORY SERVER)
 
