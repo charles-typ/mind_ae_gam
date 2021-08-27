@@ -17,16 +17,22 @@
 
 ## GAM Core
 First build `libcuckoo` in the `lib/libcuckoo` directory by following the
-`README.md` file in that directory, and then go to the `src` directory and run `make`
-therein.
+`README.md` file in that directory. 
+```bash 
+  cd mind_ae_gam/lib/libcuckoo
+  autoreconf -fis && ./configure && make && sudo make install
+```
+
+
+Then go to the `src` directory and run `make`.
 ```bash
-  cd src;
+  cd mind_ae_gam/src;
   make -j 8;
 ```
 
 ## GAM benchmark code
 ```bash
-  cd gam/test
+  cd mind_ae_gam/test
   make -j 8;
 ```
 
