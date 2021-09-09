@@ -8,6 +8,8 @@ We will run the following experiments:
 
 <br></br>
 ## Setup evaluation for GAM
+* *Please make sure you shut down compute blades(/VMs) running other systems*
+
 For GAM experiments, we need to change the directory to this repo:
 
 ```bash
@@ -90,4 +92,9 @@ We can also test traces from other applications, for example
 ```bash
 python3 run_commands.py --profile=profiles/05_load_trace_gc.yaml
 python3 run_commands.py --profile profiles/04_macro_bench_gam_gc.yaml
+```
+
+**Please shut down GAM's compute blades(/VMs) before testing out other systems**
+```bash
+python3 run_commands.py --profile profiles/06_shutdown_system.yaml
 ```
