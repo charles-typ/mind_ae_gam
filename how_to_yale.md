@@ -18,16 +18,19 @@ ssh -i [PATH TO THE SSH KEY] sosp_ae@ecl-mem-01.cs.yale.internal
 - Please do not remove repository in the control server; it will also remove any precomputed input/log files we set up on the servers.
 
 Once you log in, the default directory is set to the [control script directory](https://github.com/shsym/mind/tree/main/mind_switch_ctrl) of MIND repository:
+
+For GAM experiments, we need to change the directory to this repo:
 ```bash
+$ cd ~/mind_ae_gam/ctrl_scripts
 $ pwd
-/home/sosp_ae/mind/ctrl_scripts
+/home/sosp_ae/mind_ae_gam/ctrl_scripts
 ```
 
 You can check the current status of git repository
 ```bash
 $ git remote -v
-origin	https://github.com/shsym/mind.git (fetch)
-origin	https://github.com/shsym/mind.git (push)
+origin	https://github.com/charles-typ/mind_ae_gam.git (fetch)
+origin	https://github.com/charles-typ/mind_ae_gam.git (push)
 
 $ git status
 (some result here)
@@ -68,31 +71,27 @@ python3 run_commands.py --profile profiles/04_macro_bench_tf.yaml
         node num: 2       # <- modify this value to set the number of compute blades [1, 2, 4, 8]
         thread_num: 10    # <- modify this value to set the number of threads per blade [1, 2, 4, 10]
         step_num: 5000    # <- increase this value to run more portion of the traces
+        controller_ip: 10.10.10.201 # By default the first compute VM will be the GAM controller (No need to modify)
+        controller_port: 1231 # Default GAM controller port (No need to modify)
+        worker_port: 1234 # Default GAM worker port (No need to modify)
     # step_num used in the paper ()
     # - Tensorflow or tf: 50000
     # - GraphChi or gc: 50000
     # - Memcached YCSB workloadA or ma: 35000
     # - Memcached YCSB workloadA or mc: 20000
     ```
-  The result of the experiment will be downloaded at `~/Downloads/04_macro_bench_[APP]`
+  The result of the experiment will be downloaded at `~/Downloads/04_macro_bench_gam_[APP]`
 - [APP]: `tf` for Tensorflow, `gc` for GraphChi, `ma` / `mc` for Memcached with YCSB workloadA/workloadC
 
 To compute the final number of the result, please run
 ```bash
-cd post_processing && ./04macro_bench_res.sh && cd ..
+cd post_processing && ./04macro_bench_gam_res.sh && cd ..
 ```
 - This script scan will scan through the directories for all the applications and number of compute blades and calculate normalized computing speed.
-  - The value is calculated by (total amount of task / processing time): [actual code](https://github.com/shsym/mind/blob/8cf7e8baa05bd2489ad3058437d06acd92c8aa43/ctrl_scripts/scripts/post_processing/04macro_bench.py#L54)
-
-Result from the switch will be placed at `~/Download/latest.log`
-  - A new result will override any previous result having the same filename.
-  - Inside the log file, each line  `23:07:02:512201, 7473, 1`
-
-    represents `[TIMESTAMP], [#FREE DIRECTORY ENTRIES], [SPLIT/MERGE THRESHOLD]`
-    - We used/set total number of entires as 30,000
+  - The value is calculated by (total amount of task / processing time): [actual code](https://github.com/charles-typ/mind_ae_gam/blob/master/ctrl_scripts/scripts/post_processing/04macro_bench_gam.py)
 
 We can also test traces from other applications, for example
 ```bash
 python3 run_commands.py --profile=profiles/05_load_trace_gc.yaml
-python3 run_commands.py --profile profiles/04_macro_bench_gc.yaml
+python3 run_commands.py --profile profiles/04_macro_bench_gam_gc.yaml
 ```
