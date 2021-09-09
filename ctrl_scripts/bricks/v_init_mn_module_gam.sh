@@ -10,4 +10,4 @@ pwd
 # index here is starting from 1 not 0
 sudo ../scripts/mn-network-config.sh
 
-./gam_profile_test 2 4 $1 $2 $3 $4 0 0 100 ~/tensorflow_0_0 ~/tensorflow_1_0 ~/tensorflow_2_0 ~/tensorflow_3_0
+./gam_profile_test 2 4 $1 $2 $3 $4 0 0 100 ~/tensorflow_0_0 ~/tensorflow_1_0 ~/tensorflow_2_0 ~/tensorflow_3_0 &> memory_log &
