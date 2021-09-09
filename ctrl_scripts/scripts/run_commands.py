@@ -524,7 +524,7 @@ def run_on_all_vms(cfg, job="dummy", job_args=None, verbose=True, per_command_de
                                                                vm[key_ip], v_user_id, v_ssh_key, script_root,
                                                                job_args[key_controller_ip],
                                                                vm[key_cluster_ip], job_args[key_controller_port],
-                                                               job_args[key_controller_port])
+                                                               job_args[key_worker_port])
                     elif job == "update":
                         cmd = build_vm_update_command(server[key_ip], s_user_id, s_ssh_key,
                                                       vm[key_ip], v_user_id, v_ssh_key, script_root)
