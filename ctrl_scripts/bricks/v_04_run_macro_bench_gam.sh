@@ -10,7 +10,7 @@
 #$9: worker port number
 #$10: trace type full name
 
-if [ $# -le 13 ]; then
+if [ $# -le 9 ]; then
   echo "Error: missing arguments: $@"
 fi
 

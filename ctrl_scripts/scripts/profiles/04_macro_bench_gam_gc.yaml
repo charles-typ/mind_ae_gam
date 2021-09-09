@@ -17,11 +17,11 @@
 #  per_command_delay: 1
 #  post_delay: 90
 #
-#- name: update repo
-#  job: update
-#  per_command_delay: 1
-#  post_delay: 10
-#
+- name: update repo
+  job: update
+  per_command_delay: 1
+  post_delay: 10
+
 #- name: initialize VMs
 #  job: init_cn_gam
 #  per_command_delay: 10
