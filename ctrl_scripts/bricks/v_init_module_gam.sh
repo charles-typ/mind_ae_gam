@@ -6,5 +6,6 @@ source g_set_env_gam.sh
 cd ${GAM_PATH}/scripts/
 # index here is starting from 1 not 0
 sudo sh 0$(($1+1))-network-config.sh
+echo sudo sh 0$(($1+1))-network-config.sh
 
 exit
