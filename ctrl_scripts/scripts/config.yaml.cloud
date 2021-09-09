@@ -1,0 +1,152 @@
+# Configuration for access information
+# Default values: any omiited user id and ssh key will use those values
+
+# This is an example configuration that we used for our cluster
+default:
+  script root: ~/mind/ctrl_scripts/
+  user: sslee_cs
+  key: ~/.ssh/id_rsa
+  cluster gw: 10.10.10.0
+  nic: ens9
+
+# id of switch must be -1
+switch:
+- switch1:
+  id: -1
+  control ip: 128.110.219.201 # control plane IP
+  cluster ip: 10.10.10.1      # data plane IP
+
+# list of compute servers
+compute servers:
+- c_server1:
+  id: 1   # server's id
+  control ip: amd272.utah.cloudlab.us
+  cluster ip: 10.10.10.201
+  nic: ens8f0                 # a network interface for copying data
+  data_onwer: sslee           # owner of the memory traces
+  vm list:
+    - vm1:
+      id: 0
+      control ip: 192.168.122.101
+      cluster ip: 10.10.10.201
+      mac: 00:11:22:33:44:55
+      vm name: mind_CN1
+      user: sslee
+      key: ~/.ssh/key_for_vm
+- c_server2:
+  id: 2
+  control ip: amd274.utah.cloudlab.us
+  cluster ip: 10.10.10.202
+  nic: ens8f0
+  data_onwer: yanpeng
+  vm list:
+    - vm1:
+      id: 1
+      control ip: 192.168.122.102
+      cluster ip: 10.10.10.202
+      mac: 00:11:22:33:44:55
+      vm name: mind_CN2
+      user: sslee
+      key: ~/.ssh/key_for_vm
+- c_server3:
+  id: 3
+  control ip: amd275.utah.cloudlab.us
+  cluster ip: 10.10.10.203
+  nic: ens8f0
+  data_onwer: yupeng
+  vm list:
+    - vm1:
+      id: 2
+      control ip: 192.168.122.103
+      cluster ip: 10.10.10.203
+      mac: 00:11:22:33:44:55
+      vm name: mind_CN3
+      user: sslee
+      key: ~/.ssh/key_for_vm
+- c_server4:
+  id: 4
+  control ip: amd276.utah.cloudlab.us
+  cluster ip: 10.10.10.204
+  nic: ens8f0
+  data_onwer: yupeng
+  vm list:
+    - vm1:
+      id: 3
+      control ip: 192.168.122.104
+      cluster ip: 10.10.10.204
+      mac: 00:11:22:33:44:55
+      vm name: mind_CN4
+      user: sslee
+      key: ~/.ssh/key_for_vm
+- c_server5:
+  id: 5
+  control ip: amd278.utah.cloudlab.us
+  cluster ip: 10.10.10.205
+  nic: ens8f0
+  data_onwer: yupeng
+  vm list:
+    - vm1:
+      id: 4
+      control ip: 192.168.122.105
+      cluster ip: 10.10.10.205
+      mac: 00:11:22:33:44:55
+      vm name: mind_CN5
+      user: sslee
+      key: ~/.ssh/key_for_vm
+- c_server6:
+  id: 6
+  control ip: amd279.utah.cloudlab.us
+  cluster ip: 10.10.10.206
+  nic: ens8f0
+  data_onwer: yupeng
+  vm list:
+    - vm1:
+      id: 5
+      control ip: 192.168.122.106
+      cluster ip: 10.10.10.206
+      mac: 00:11:22:33:44:55
+      vm name: mind_CN6
+      user: sslee
+      key: ~/.ssh/key_for_vm
+
+# list of memory servers
+memory servers:
+  - m_server1:
+    id: 1
+    control ip: amd280.utah.cloudlab.us
+    vm list:
+      - vm1:
+        id: 16
+        control ip: 192.168.122.11
+        cluster ip: 10.10.10.221
+        vm name: mind_MN
+        user: sslee
+        key: ~/.ssh/key_for_vm
+        nic: ens10
+
+# list of storage servers
+storage servers:
+- s_server1:
+  control ip: 172.29.249.44
+  cluster ip: 10.10.10.212
+  mac: 04:3f:72:a2:b4:3b
+  user: sosp_ae
+  key: ~/.ssh/disagg_comp
+  trace src:
+    tf: /home/yanpeng/2020_11_25_tensorflow/
+    gc: /home/yanpeng/2021_03_graphchi/
+    ma: /media/data_ssds/memcached_a/
+    mc: /media/data_ssds/memcached_c/
+  trace dst:
+    tf:
+      dir_1: /media/data_ssds/tensorflow_logs/
+      dir_2: /media/data_raid0/tensorflow_logs/
+    gc:
+      dir_1: /media/data_ssds/graphchi_logs/
+      dir_2: /media/data_raid0/graphchi_logs/
+    ma:
+      dir_1: /media/data_ssds/memcached_a_logs/
+      dir_2: /media/data_raid0/memcached_a_logs/
+    mc:
+      dir_1: /media/data_ssds/memcached_c_logs/
+      dir_2: /media/data_raid0/memcached_c_logs/

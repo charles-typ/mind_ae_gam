@@ -132,7 +132,6 @@ struct trace_t {
   long total_interval;
   long total_fence;
   unsigned long benchmark_size;
-  double remote_ratio;
   bool is_master;
   bool is_compute;
   int num_threads;
@@ -461,11 +460,8 @@ enum {
   arg_port_worker = 6,
   arg_is_master = 7,
   arg_is_compute = 8,
-  arg_remote_ratio = 9,
-  arg_benchmark_size = 10,
-  arg_num_comp_nodes = 11,
-  arg_max_pass = 12,
-  arg_log1 = 13,
+  arg_max_pass = 9,
+  arg_log1 = 10,
 };
 
 int main(int argc, char **argv) {
@@ -476,8 +472,8 @@ int main(int argc, char **argv) {
     return 1;
   }
 
-  num_comp_nodes = atoi(argv[arg_num_comp_nodes]);
   num_nodes = atoi(argv[arg_node_cnt]);
+  num_comp_nodes = num_nodes - 1;
   num_threads = atoi(argv[arg_num_threads]);
   max_pass = atoi(argv[arg_max_pass]);
 #ifdef single_thread_test
@@ -491,9 +487,8 @@ int main(int argc, char **argv) {
   //FIXME check this is failed
   bool is_master = atoi(argv[arg_is_master]);
   bool is_compute = atoi(argv[arg_is_compute]);
-  double remote_ratio = atof(argv[arg_remote_ratio]);
-  long long benchmark_size = atol(argv[arg_benchmark_size]);
-  printf("%ld %d %f %d %d\n", benchmark_size, num_comp_nodes, remote_ratio, is_master, is_compute);
+  long long benchmark_size = 6442450944;
+  printf("%ld %d %d %d\n", benchmark_size, num_comp_nodes, is_master, is_compute);
   printf("Num Nodes: %d, Num Threads: %d\n", num_nodes, num_threads);
 #ifndef single_thread_test
   if (argc != arg_log1 + num_threads) {
@@ -544,7 +539,8 @@ int main(int argc, char **argv) {
   if(is_compute) {
     conf.cache_th = 1.0;
     //long long size = (long long)((double)benchmark_size / (double)num_comp_nodes * (double)remote_ratio);
-    long long size = (long long)((double)benchmark_size  * (double)remote_ratio);
+    //long long size = (long long)((double)benchmark_size  * (double)remote_ratio);
+    long long size = (long long) 512 * 1024 * 1024;
     //conf.size = size < conf.size ? conf.size : size;
     conf.size = size;
     //conf.size = 1024 * 1024 * 1024 * 6L;
