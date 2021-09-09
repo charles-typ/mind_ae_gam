@@ -130,7 +130,7 @@ memory servers:
     vm list:
       - vm1:
         id: 16
-        control ip: 192.168.122.202
+        control ip: 192.168.122.21
         cluster ip: 10.10.10.221
         mac: 04:3f:72:a2:b7:3a
         vm name: gam-mem-01
