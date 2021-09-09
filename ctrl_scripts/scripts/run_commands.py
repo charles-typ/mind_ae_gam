@@ -228,8 +228,7 @@ def generate_route_cmd(v_nic, cluster_gw):
 def build_vm_init_gam_command(server_ip, s_user, s_key, vm_ctrl_ip, v_user, v_key, script_dir, v_id, v_nic, cluster_gw):
     return build_vm_brick_command(server_ip, s_user, s_key,
                                   vm_ctrl_ip, v_user, v_key,
-                                  script_dir, "v_init_module_gam.sh " + str(v_id) + " " + str(v_nic)
-                                  + generate_arp_cmd(v_nic))
+                                  script_dir, "v_init_module_gam.sh " + str(v_id) + " " + str(v_nic))
 
 def build_vm_init_command(server_ip, s_user, s_key, vm_ctrl_ip, v_user, v_key, script_dir, v_id, v_nic, cluster_gw):
     return build_vm_brick_command(server_ip, s_user, s_key,
