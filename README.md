@@ -6,7 +6,7 @@
  
 ### [→ Please find our instructions here for Yale cluster evaluation](https://github.com/charles-typ/mind_ae_gam/blob/master/how_to_yale.md)
 
-
+We provide a framework for users to easily launch the experiments in the above link. The sections below are for running experiments from scatch.
 
 # Build & Usage
 ## Prerequisite
