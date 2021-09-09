@@ -7,7 +7,13 @@ cd ${GAM_PATH}/scripts/
 
 echo cd ${GAM_PATH}/scripts/
 # index here is starting from 1 not 0
-sudo sh 0$(($1+1))-network-config.sh
-echo sudo sh 0$(($1+1))-network-config.sh
+if [[ $1 -eq 0 ]]
+then
+    sudo sh 01-network-config.sh
+    echo sudo sh 01-network-config.sh
+else
+    sudo sh 0$(($1+1))-network-config.sh
+    echo sudo sh 0$(($1+1))-network-config.sh
+fi
 
 exit

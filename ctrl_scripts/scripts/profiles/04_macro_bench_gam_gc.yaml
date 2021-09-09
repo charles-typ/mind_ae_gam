@@ -12,10 +12,10 @@
 #  per_command_delay: 1
 #  post_delay: 60
 #
-#- name: restart and reset VMs
-#  job: reset
-#  per_command_delay: 1
-#  post_delay: 90
+- name: restart and reset VMs
+  job: reset
+  per_command_delay: 1
+  post_delay: 90
 
 - name: update repo
   job: update
