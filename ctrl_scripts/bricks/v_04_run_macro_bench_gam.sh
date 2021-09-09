@@ -18,7 +18,7 @@ LOG_DIR=~/Downloads/04_macro_bench_$4
 mkdir -p $LOG_DIR
 echo "Run for Node: $1"
 source g_set_env_gam.sh
-NFS_IP := 192.168.122.1
+NFS_IP=192.168.122.1
 
 # Mount logs
 sudo mkdir -p /test_program_log

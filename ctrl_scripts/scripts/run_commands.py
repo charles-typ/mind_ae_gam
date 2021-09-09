@@ -45,16 +45,10 @@ dir_receipes = '/recipes'
 dir_bricks = '/bricks'
 mem_blade_id_start = 16
 
-key_total_server = 'total server'
-key_controller_ip = 'controller ip'
-key_worker_ip = 'worker ip'
-key_controller_port = 'controller port'
-key_worker_port = 'worker port'
-key_is_controller = 'is controller'
-key_is_compute_node = 'is compute node'
-key_local_cache_ratio = 'local cache ratio'
-key_workset_size = 'workset size'
-key_total_num_compute_node = 'total num compute node'
+key_controller_ip = 'controller_ip'
+key_worker_ip = 'worker_ip'
+key_controller_port = 'controller_port'
+key_worker_port = 'worker_port'
 
 app_name_map = {
     'ma': 'memcached_a',
@@ -712,21 +706,20 @@ def run_on_all_vms(cfg, job="dummy", job_args=None, verbose=True, per_command_de
                         if (job_args is not None) and (key_trace in job_args) \
                                 and (key_thread_num in job_args) and (key_node_num in job_args) \
                                 and (key_step_num in job_args):
-                            if int(vm[key_id]) < int(job_args[key_node_num]):
-                                if job == "macro_bench":
-                                    cmd = build_vm_macro_bench_gam_command(server[key_ip], s_user_id, s_ssh_key,
-                                                                           vm[key_ip], v_user_id, v_ssh_key,
-                                                                           script_root,
-                                                                           node_id=vm[key_id],
-                                                                           trace=job_args[key_trace],
-                                                                           thread_num=job_args[key_thread_num],
-                                                                           node_num=job_args[key_node_num],
-                                                                           step_num=job_args[key_step_num],
-                                                                           controller_ip=job_args[key_controller_ip],
-                                                                           worker_ip=vm[key_cluster_ip],
-                                                                           controller_port=job_args[
-                                                                               key_controller_port],
-                                                                           worker_port=job_args[key_worker_port])
+                            if int(vm[key_id]) < int(job_args[key_node_num]) - 1:
+                                cmd = build_vm_macro_bench_gam_command(server[key_ip], s_user_id, s_ssh_key,
+                                                                       vm[key_ip], v_user_id, v_ssh_key,
+                                                                       script_root,
+                                                                       node_id=vm[key_id],
+                                                                       trace=job_args[key_trace],
+                                                                       thread_num=job_args[key_thread_num],
+                                                                       node_num=job_args[key_node_num],
+                                                                       step_num=job_args[key_step_num],
+                                                                       controller_ip=job_args[key_controller_ip],
+                                                                       worker_ip=vm[key_cluster_ip],
+                                                                       controller_port=job_args[
+                                                                           key_controller_port],
+                                                                       worker_port=job_args[key_worker_port])
 
 
                     elif job == "collect_from_vms":
