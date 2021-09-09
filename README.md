@@ -17,16 +17,22 @@
 
 ## GAM Core
 First build `libcuckoo` in the `lib/libcuckoo` directory by following the
-`README.md` file in that directory, and then go to the `src` directory and run `make`
-therein.
+`README.md` file in that directory. 
+```bash 
+  cd mind_ae_gam/lib/libcuckoo
+  autoreconf -fis && ./configure && make && sudo make install
+```
+
+
+Then go to the `src` directory and run `make`.
 ```bash
-  cd src;
+  cd mind_ae_gam/src;
   make -j 8;
 ```
 
 ## GAM benchmark code
 ```bash
-  cd gam/test
+  cd mind_ae_gam/test
   make -j 8;
 ```
 
@@ -52,7 +58,7 @@ Usage:
 ```bash
 cd gam/test
 # This requires sudo permission to access the logs in SSD
-sudo ./gam_profile_test $TOTAL_SERVERS $NUM_THREAD_PER_SERVER $CONTROLLER_IP $WORKER_IP $CONTROLLER_PORT $WORKER_PORT $IS_CONTROLLER $IS_COMPUTE_NODE LOCAL_CACHE_RATIO $WORKSET_SIZE $TOTAL_NUM_COMPUTE_NODE $MAX_PASS $TRACE_FILES.... &> $RESULT_FILE
+sudo ./gam_profile_test $TOTAL_SERVERS $NUM_THREAD_PER_SERVER $CONTROLLER_IP $WORKER_IP $CONTROLLER_PORT $WORKER_PORT $IS_CONTROLLER $IS_COMPUTE_NODE $LOCAL_CACHE_RATIO $WORKSET_SIZE $TOTAL_NUM_COMPUTE_NODE $MAX_PASS $TRACE_FILES.... &> $RESULT_FILE
 ```
 
 Parameters:
@@ -79,7 +85,7 @@ $WORKSET_SIZE = Number of bytes that the workload will cover (whole range, in by
 
 $TOTAL_NUM_COMPUTE_NODE = total numebr of compute nodes
 
-$MAX_PASS = maximum number of passes of trace to run. We have different number of logs for each application: (ma: 35K, MC: 20K, TF: 50K, GC: 50K). However, user can restricted the number of passes they want to run to limit the entire execution time.
+$MAX_PASS = maximum number of passes of trace to run. We have different number of logs for each application: (ma: 35K, MC: 20K, TF: 50K, GC: 50K). However, user can restricted the number of passes they want to run to limit the entire execution time. (Dummy for memory server)
 
 $TRACE_FILES... = all trace files (PUT DUMMY FILES FOR MEMORY SERVER)
 
@@ -95,7 +101,7 @@ Here is one example for setting up a single compute node single memory node benc
 
 ### Server 1: compute server and GAM controller
 ```bash
-sudo ./gam_profile_test 2 10 10.10.10.201 10.10.10.201 1231 1234 1 1 0.083 6442450944 1 /memcached_a/memcached_a_0_0 /memcached_a/memcached_a_1_0 /memcached_a/memcached_a_2_0 /memcached_a/memcached_a_3_0 /memcached_a/memcached_a_4_0 /memcached_a/memcached_a_5_0 /memcached_a/memcached_a_6_0 /memcached_a/memcached_a_7_0 /memcached_a/memcached_a_8_0 /memcached_a/memcached_a_9_0 &> 1C_1M_10T_512MB_memcached_a
+sudo ./gam_profile_test 2 10 10.10.10.201 10.10.10.201 1231 1234 1 1 0.083 6442450944 1 100 /memcached_a/memcached_a_0_0 /memcached_a/memcached_a_1_0 /memcached_a/memcached_a_2_0 /memcached_a/memcached_a_3_0 /memcached_a/memcached_a_4_0 /memcached_a/memcached_a_5_0 /memcached_a/memcached_a_6_0 /memcached_a/memcached_a_7_0 /memcached_a/memcached_a_8_0 /memcached_a/memcached_a_9_0 &> 1C_1M_10T_512MB_memcached_a
 ```
 ### Server 2: memory server
 ```bash
@@ -103,5 +109,5 @@ sudo ./gam_profile_test 2 10 10.10.10.201 10.10.10.201 1231 1234 1 1 0.083 64424
 # ~/tensorflow_0_0 ~/tensorflow_1_0 ~/tensorflow_2_0 ~/tensorflow_3_0 are just dummy files
 # WORKSET_SIZE, LOCAL_CACHE_RATIO, NUM_THREAD_PER_SERVER are not used
 # NUM_THREAD_PER_SERVER need to match number of dummy trace files
- ./gam_profile_test 2 4 10.10.10.201 10.10.10.221 1231 1234 0 0 0.5 2147483648 1 ~/tensorflow_0_0 ~/tensorflow_1_0 ~/tensorflow_2_0 ~/tensorflow_3_0
+ ./gam_profile_test 2 4 10.10.10.201 10.10.10.221 1231 1234 0 0 0.5 2147483648 1 100 ~/tensorflow_0_0 ~/tensorflow_1_0 ~/tensorflow_2_0 ~/tensorflow_3_0
  ```
