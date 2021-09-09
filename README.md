@@ -4,7 +4,7 @@
  
  We made several modifications to the [original GAM repo](https://github.com/ooibc88/gam), including fixing bugs and implementing memory trace applications.
  
- Please follow the installation guide in the original GAM repo.
+### [→ Please find our instructions here for Yale cluster evaluation](https://github.com/yupeng/mind_ae_gam/blob/master/how_to_yale.md)
 
 
 
