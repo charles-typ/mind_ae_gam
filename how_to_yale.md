@@ -8,7 +8,7 @@ We will run the following experiments:
 
 <br></br>
 ## Setup evaluation for GAM
-* *Please make sure you shut down compute blades(/VMs) running other systems*
+* *Please make sure that you shut down compute blades(/VMs) running other systems*
 
 For GAM experiments, we need to change the directory to this repo:
 
