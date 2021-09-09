@@ -17,7 +17,7 @@ ssh -i [PATH TO THE SSH KEY] sosp_ae@ecl-mem-01.cs.yale.internal
 - Please find ssh key from hotcrp.
 - Please do not remove repository in the control server; it will also remove any precomputed input/log files we set up on the servers.
 
-Once you log in, the default directory is set to the [control script directory](https://github.com/shsym/mind/tree/main/mind_switch_ctrl) of MIND repository:
+Once you log in, the default directory is set to the [control script directory](https://github.com/shsym/mind/tree/main/ctrl_scripts/) of MIND repository:
 
 For GAM experiments, we need to change the directory to this repo:
 ```bash
