@@ -225,6 +225,12 @@ def generate_route_cmd(v_nic, cluster_gw):
     return _cmd
 
 
+def build_vm_init_gam_command(server_ip, s_user, s_key, vm_ctrl_ip, v_user, v_key, script_dir, v_id, v_nic, cluster_gw):
+    return build_vm_brick_command(server_ip, s_user, s_key,
+                                  vm_ctrl_ip, v_user, v_key,
+                                  script_dir, "v_init_module_gam.sh " + str(v_id) + " " + str(v_nic)
+                                  + generate_arp_cmd(v_nic))
+
 def build_vm_init_command(server_ip, s_user, s_key, vm_ctrl_ip, v_user, v_key, script_dir, v_id, v_nic, cluster_gw):
     return build_vm_brick_command(server_ip, s_user, s_key,
                                   vm_ctrl_ip, v_user, v_key,
@@ -519,7 +525,7 @@ def run_on_all_vms(cfg, job="dummy", job_args=None, verbose=True, per_command_de
                                                        vm[key_ip], v_user_id, v_ssh_key, script_root,
                                                        vm[key_id], v_nic)
 
-                    elif job == "init_gam":
+                    elif job == "init_mn_gam":
                         if job_args is not None:
                             cmd = build_vm_init_mn_gam_command(server[key_ip], s_user_id, s_ssh_key,
                                                                vm[key_ip], v_user_id, v_ssh_key, script_root,
@@ -649,8 +655,8 @@ def run_on_all_vms(cfg, job="dummy", job_args=None, verbose=True, per_command_de
                     elif job == "ls":
                         cmd = build_vm_custom_command(server[key_ip], s_user_id, s_ssh_key,
                                                       vm[key_ip], v_user_id, v_ssh_key, "ls")
-                    elif job == "init":
-                        cmd = build_vm_init_command(server[key_ip], s_user_id, s_ssh_key,
+                    elif job == "init_cn_gam":
+                        cmd = build_vm_init_gam_command(server[key_ip], s_user_id, s_ssh_key,
                                                     vm[key_ip], v_user_id, v_ssh_key, script_root, vm[key_id], v_nic,
                                                     cfg[key_default][key_cluster_gw])
                     elif job == "update":
