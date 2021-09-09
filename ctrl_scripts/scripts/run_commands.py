@@ -297,14 +297,14 @@ def build_vm_macro_bench_command(server_ip, s_user, s_key, vm_ctrl_ip, v_user, v
 def build_vm_macro_bench_gam_command(server_ip, s_user, s_key, vm_ctrl_ip, v_user, v_key,
                                      script_dir, node_id=0, trace='tf', thread_num=10, node_num=1, step_num=1000,
                                      controller_ip='10.10.10.201', worker_ip='10.10.10.201', controller_port='1231',
-                                     worker_port='1234'):
+                                     worker_port='1234', trace_full_name='tensorflow'):
     return build_vm_brick_command(server_ip, s_user, s_key,
                                   vm_ctrl_ip, v_user, v_key, script_dir,
                                   "v_04_run_macro_bench_gam.sh "
                                   + str(node_id) + " " + str(node_num) + " "
                                   + str(thread_num) + " " + trace + " " + str(step_num) + " " + str(
                                       controller_ip) + " " + str(worker_ip) + " " + str(controller_port) + " " + str(
-                                      worker_port))
+                                      worker_port) + " " + str(trace_full_name))
 
 
 def build_vm_macro_profile_command(server_ip, s_user, s_key, vm_ctrl_ip, v_user, v_key,
@@ -719,7 +719,8 @@ def run_on_all_vms(cfg, job="dummy", job_args=None, verbose=True, per_command_de
                                                                        worker_ip=vm[key_cluster_ip],
                                                                        controller_port=job_args[
                                                                            key_controller_port],
-                                                                       worker_port=job_args[key_worker_port])
+                                                                       worker_port=job_args[key_worker_port],
+                                                                       trace_full_name=app_name_map[job_args[key_trace]])
 
 
                     elif job == "collect_from_vms":
