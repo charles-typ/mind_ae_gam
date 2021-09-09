@@ -347,15 +347,13 @@ async def terminate(sig, loop):
     tasks = [task for task in asyncio.Task.all_tasks() if task is not
              asyncio.tasks.Task.current_task()]
     list(map(lambda task: task.cancel(), tasks))
-    await
-    asyncio.gather(*tasks, return_exceptions=True)
+    await asyncio.gather(*tasks, return_exceptions=True)
     loop.stop()
 
 
 async def read_stream(stream, err_format=False):
     while True:
-        line = await
-        stream.readline()
+        line = await stream.readline()
         if line:
             line = str(line.rstrip(), 'utf8', 'ignore')
             if err_format:
@@ -368,24 +366,20 @@ async def read_stream(stream, err_format=False):
 
 async def run_command_sync_print(loop, cmd, collect_out=False, pre_delay=0):
     # wait if needed
-    await
-    asyncio.sleep(pre_delay)
+    await asyncio.sleep(pre_delay)
     # run a command
-    proc = await
-    asyncio.create_subprocess_shell(cmd,
+    proc = await asyncio.create_subprocess_shell(cmd,
                                     stdin=asyncio.subprocess.DEVNULL,
                                     stdout=asyncio.subprocess.PIPE,  # asyncio.subprocess.PIPE,
                                     stderr=asyncio.subprocess.PIPE, loop=loop, shell=True)
     if collect_out:
         print(bcolors.HEADER + "Sub-task started: " + cmd + bcolors.ENDC)
     # wait until the command is finished
-    await
-    asyncio.wait([
+    await asyncio.wait([
         read_stream(proc.stdout),
         read_stream(proc.stderr, err_format=True)
     ])
-    await
-    proc.wait()
+    await proc.wait()
 
     if collect_out:
         print(bcolors.HEADER + "Sub-task terminated: " + cmd + bcolors.ENDC)
@@ -394,8 +388,7 @@ async def run_command_sync_print(loop, cmd, collect_out=False, pre_delay=0):
 
 
 async def wait_time(time):
-    await
-    asyncio.sleep(time)
+    await asyncio.sleep(time)
 
 
 def run_on_all_vms(cfg, job="dummy", job_args=None, verbose=True, per_command_delay=1, post_delay=1,
@@ -442,6 +435,10 @@ def run_on_all_vms(cfg, job="dummy", job_args=None, verbose=True, per_command_de
                     cmd = "echo ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN9fJsOwkHhjt06p8/+OdSv1J/pOQF4SgDTO0T22Zmvd seung-seob.lee@yale.edu >> ~/.ssh/authorized_keys"
                 elif job == "reset":
                     cmd = "python3 run_switch_cmds.py --switch=" + switch[key_ip] + " --cmd=restart_switch"
+                elif job == "mind_switch":
+                    cmd = "python3 run_switch_cmds.py --switch=" + switch[key_ip] + " --cmd=setup_mind_switch"
+                elif job == "normal_switch":
+                    cmd = "python3 run_switch_cmds.py --switch=" + switch[key_ip] + " --cmd=setup_normal_switch"
                 elif job == "switch_log":
                     cmd = "python3 run_switch_cmds.py --switch=" + switch[
                         key_ip] + " --cmd=download_log --user=" + s_user_id
