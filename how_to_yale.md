@@ -3,27 +3,17 @@ This directory contains command lines with minimal description.
 
 ## Summary
 We will run the following experiments:
-- ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) Performance evaluation with memory traces (Fig. 8)
+- GAM performance evaluation with memory traces (Fig. 6)
+---
 
-## Access to the control server
-We assume thet you already have Yale VPN following our instructions in hotcrp.
-- **IMPORTANT** please reserve your time slot first using the link in hotcrp; since we have only one cluster with a programmable switch, each evaluator should have own dedicated time slot.
-- *For your anonymity, please do not use your google account when you access any Google docs we provide*
-
-After start Yale VPN session (i.e., login on Cisco Anyconnect)
-```bash
-ssh -i [PATH TO THE SSH KEY] sosp_ae@ecl-mem-01.cs.yale.internal
-```
-- Please find ssh key from hotcrp.
-- Please do not remove repository in the control server; it will also remove any precomputed input/log files we set up on the servers.
-
-Once you log in, the default directory is set to the [control script directory](https://github.com/shsym/mind/tree/main/ctrl_scripts/) of MIND repository:
-
+<br></br>
+## Setup evaluation for GAM
 For GAM experiments, we need to change the directory to this repo:
+
 ```bash
-$ cd ~/mind_ae_gam/ctrl_scripts
+$ cd ~/mind_ae_gam/ctrl_scripts/scripts
 $ pwd
-/home/sosp_ae/mind_ae_gam/ctrl_scripts
+/home/sosp_ae/mind_ae_gam/ctrl_scripts/scripts
 ```
 
 You can check the current status of git repository
@@ -38,29 +28,40 @@ $ git status
 $ git log
 (some result here)
 ```
+
 If some files were modified by previous evaluator, please reset the repository by
 ```bash
 git reset --hard HEAD
 git pull
 ```
 
+Please tell switch that you are going to run normal switch program
+```bash
+python3 run_commands.py --profile=profiles/02_setup_normal_switch.yaml
+```
+---
+
+<br></br>
 ## ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) Performance evaluation with memory traces (Fig. 8)
 
-Let's go inside the script directory and load memory access traces for Tensorflow
+*Skip this step if you already loaded target traces for MIND*
+- Every time you load traces for new application, it will automatically erase the previous ones
+- Go inside the script directory and load memory access traces for Tensorflow
+
 ```bash
-cd scripts
 python3 run_commands.py --profile=profiles/05_load_trace_tf.yaml
 ```
-The script will print out raw input (i.e., ssh commands to the servers) and standard output.
-- Since we need to download more than 1TB of data, this will take some time up to one hour.
 
 After the script for loading traces is finished, we can run the following command to run an experiment with the TensorFlow memory traces we just loaded:
 ```bash
 python3 run_commands.py --profile profiles/04_macro_bench_tf.yaml
 ```
-- By default, it will run only 1/10 of the total traces with 2 compute blades; it will take 10 ~ 20 minutes.
-  - Please modify the values in `profiles/04_macro_bench_tf.yaml` for test various setup
-
+- By default, it will run only 1/10 of the total traces (i.e., 5k steps of total 50k steps) with 2 compute blades; it will take 10 ~ 20 minutes.
+  - Please modify the values in `profiles/04_macro_bench_tf.yaml` to change number of blades, threads and steps.
+  - Tag for the application or [APP]
+    - [APP]: `tf` for TensorFlow, `gc` for GraphChi, `ma` / `mc` for Memcached with YCSB workloadA/workloadC
+  - Number of total steps we used in the paper are
+    - `tf`: 50000,  `gc`: 50000, `ma`: 35000, `mc`: 20000
     ```yaml
     - name: run macro benchmark
         job: macro_bench
@@ -74,14 +75,9 @@ python3 run_commands.py --profile profiles/04_macro_bench_tf.yaml
         controller_ip: 10.10.10.201 # By default the first compute VM will be the GAM controller (No need to modify)
         controller_port: 1231 # Default GAM controller port (No need to modify)
         worker_port: 1234 # Default GAM worker port (No need to modify)
-    # step_num used in the paper ()
-    # - Tensorflow or tf: 50000
-    # - GraphChi or gc: 50000
-    # - Memcached YCSB workloadA or ma: 35000
-    # - Memcached YCSB workloadA or mc: 20000
     ```
-  The result of the experiment will be downloaded at `~/Downloads/04_macro_bench_gam_[APP]`
-- [APP]: `tf` for Tensorflow, `gc` for GraphChi, `ma` / `mc` for Memcached with YCSB workloadA/workloadC
+The result of the experiment will be downloaded at `~/Downloads/04_macro_bench_gam_[APP]`
+
 
 To compute the final number of the result, please run
 ```bash
