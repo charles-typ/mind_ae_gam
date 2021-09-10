@@ -31,7 +31,7 @@
     trace: mc
     node num: 2
     thread_num: 10
-    step_num: 100
+    step_num: 2000
     controller_ip: 10.10.10.201
     controller_port: 1231
     worker_port: 1234
@@ -40,14 +40,14 @@
 # - GraphChi or gc: 50000
 # - Memcached YCSB workloadA or ma: 35000
 # - Memcached YCSB workloadA or mc: 20000
-- name: start memory VM
-  job: init_mn_gam
-  per_command_delay: 10
-  post_delay: 20
-  job_args:
-    controller_ip: 10.10.10.201
-    controller_port: 1231
-    worker_port: 1234
+#- name: start memory VM
+#  job: init_mn_gam
+#  per_command_delay: 10
+#  post_delay: 20
+#  job_args:
+#    controller_ip: 10.10.10.201
+#    controller_port: 1231
+#    worker_port: 1234
 
 # = File download part =
 - name: collect log data (vm to server)
@@ -65,3 +65,5 @@
   job_args:
     local dir: ~/Downloads/gam/
     target dir: Downloads/gam/04_macro_bench_mc
+
+
