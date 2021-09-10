@@ -3,6 +3,9 @@
 #$2: network interface of RoCE NIC
 source g_set_env_gam.sh
 
+# Kill previous runs
+pkill gam
+
 cd ~/mind_ae_gam/lib/libcuckoo && autoreconf -fis && ./configure && make && sudo make install && cd ~/mind_ae_gam/src && make -j 8 && cd ~/mind_ae_gam/test && make -j 8
 
 # Linux kernel module for small initrd

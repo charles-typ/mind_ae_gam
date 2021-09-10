@@ -19,6 +19,8 @@ mkdir -p $LOG_DIR
 echo "Run for Node: $1"
 source g_set_env_gam.sh
 
+sudo pkill gam
+
 NFS_IP="192.168.122.1"
 echo $NFS_IP
 
