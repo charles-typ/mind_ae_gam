@@ -704,7 +704,9 @@ int main(int argc, char **argv) {
       ++pass;
       unsigned long longest_time = 0;
       for (int i = 0; i < num_threads; ++i) {
-        longest_time = max(longest_time, args[i].time);
+        if(args[i].time > longest_time) {
+            longest_time = args[i].time;
+        }
        }
       tot_run_time += longest_time;
       if (pass % 1000 == 0) {
