@@ -446,7 +446,7 @@ int load_trace(int fd, struct trace_t *arg, unsigned long ts_limit) {
   assert(size <= LOG_NUM_TOTAL * sizeof(RWlog));
   //assert(size % sizeof(RWlog) == 0);
   arg->len = size / (sizeof(RWlog));
-  printf("finish loading %lu logs\n", arg->len);
+  //printf("finish loading %lu logs\n", arg->len);
 
   return 0;
 }
@@ -668,9 +668,9 @@ int main(int argc, char **argv) {
     while (1) {
       ts_limit += TIMEWINDOW_US;
 
-      printf("Pass[%lu] Node[%d]: loading log...\n", pass, node_id);
+      //printf("Pass[%lu] Node[%d]: loading log...\n", pass, node_id);
       for (int i = 0; i < num_threads; ++i) {
-        printf("Thread[%d]: loading log...\n", i);
+        //printf("Thread[%d]: loading log...\n", i);
         ret = load_trace(fd[i], &args[i], ts_limit);
         if (ret) {
           printf("fail to load trace\n");
@@ -678,11 +678,11 @@ int main(int argc, char **argv) {
       }
 
       pthread_t thread[MAX_NUM_THREAD];
-      printf("running trace...\n");
+      //printf("running trace...\n");
 
       for (int i = 0; i < num_threads; ++i) {
         args[i].pass = pass;
-        printf("args has len: %d\n", args[i].len);
+        //printf("args has len: %d\n", args[i].len);
         if (args[i].len) {
           if (pthread_create(&thread[i], NULL, (void *(*)(void *)) do_log, &args[i])) {
             printf("Error creating thread %d\n", i);
