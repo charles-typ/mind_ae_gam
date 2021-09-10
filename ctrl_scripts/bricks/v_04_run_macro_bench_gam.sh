@@ -39,8 +39,7 @@ echo "Make cmd: ${make_cmd}"
 
 if [[ "$4" = "ma" ]]; then
 	if [[ $1 -eq 0 ]]; then
-	  echo $make_cmd $2 $3 $6 $7 $8 $9 1 1 $5 /test_program_log/${4}/0 /test_program_log/${4}/1 /test_program_log/${4}/2 /test_program_log/${4}/3 /test_program_log/${4}/4 /test_program_log/${4}/5 /test_program_log/${4}/6 /test_program_log/${4}/7 /test_program_log/${4}/8 /test_program_log/${4}/9_0
-	  $make_cmd $2 $3 $6 $7 $8 $9 1 1 $5 /test_program_log/${4}/0 /test_program_log/${4}/1 /test_program_log/${4}/2 /test_program_log/${4}/3 /test_program_log/${4}/4 /test_program_log/${4}/5 /test_program_log/${4}/6 /test_program_log/${4}/7 /test_program_log/${4}/8 /test_program_log/${4}/9_0 &> result.log &
+	  echo $make_cmd $2 $3 $6 $7 $8 $9 1 1 $5 /test_program_log/${4}/${10}_0_0 /test_program_log/${4}/${10}_1_0 /test_program_log/${4}/${10}_2_0 /test_program_log/${4}/${10}_3_0 /test_program_log/${4}/${10}_4_0 /test_program_log/${4}/${10}_5_0 /test_program_log/${4}/${10}_6_0 /test_program_log/${4}/${10}_7_0 /test_program_log/${4}/${10}_8_0 /test_program_log/${4}/${10}_9_0 &> result.log &
 	  $make_cmd $2 $3 $6 $7 $8 $9 1 1 $5 /test_program_log/${4}/${10}_0_0 /test_program_log/${4}/${10}_1_0 /test_program_log/${4}/${10}_2_0 /test_program_log/${4}/${10}_3_0 /test_program_log/${4}/${10}_4_0 /test_program_log/${4}/${10}_5_0 /test_program_log/${4}/${10}_6_0 /test_program_log/${4}/${10}_7_0 /test_program_log/${4}/${10}_8_0 /test_program_log/${4}/${10}_9_0 &> result.log &
 	elif [[ $1 -eq 1 ]]; then
 	  echo $make_cmd $2 $3 $6 $7 $8 $9 0 1 $5 /media/data_raid0/${10}_logs/${10}_10_0 /media/data_raid0/${10}_logs/${10}_11_0 /media/data_raid0/${10}_logs/${10}_12_0 /media/data_raid0/${10}_logs/${10}_13_0 /media/data_raid0/${10}_logs/${10}_14_0 /media/data_raid0/${10}_logs/${10}_15_0 /media/data_raid0/${10}_logs/${10}_16_0 /media/data_raid0/${10}_logs/${10}_17_0 /media/data_raid0/${10}_logs/${10}_18_0  /media/data_raid0/${10}_logs/${10}_19_0
