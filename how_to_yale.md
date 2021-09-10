@@ -74,13 +74,14 @@ python3 run_commands.py --profile profiles/04_macro_bench_tf.yaml
         post_delay: 0
         job_args:
         trace: tf         # Tensorflow workload
-        node num: 2       # <- modify this value to set the number of compute blades [1, 2, 4, 8]
+        node num: 2       # <- ** BECAREFUL ** this value is different from MIND's configuration, node num is the toal number of servers(both compute and memory) in the system modify this value to set the number of vms [2, 3, 5, 9]. The default value(2) means one compute VM and one memory VM.
         thread_num: 10    # <- modify this value to set the number of threads per blade [1, 2, 4, 10]
         step_num: 5000    # <- increase this value to run more portion of the traces
         controller_ip: 10.10.10.201 # By default the first compute VM will be the GAM controller (No need to modify)
         controller_port: 1231 # Default GAM controller port (No need to modify)
         worker_port: 1234 # Default GAM worker port (No need to modify)
     ```
+## Please be careful "node num" in gam experiments represent the total number of VMs in the system (# compute + # memory). This is different from the MIND configuration.
 The result of the experiment will be downloaded at `~/Downloads/04_macro_bench_gam_[APP]`
 
 
