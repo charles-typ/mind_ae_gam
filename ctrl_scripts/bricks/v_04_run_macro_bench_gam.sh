@@ -30,6 +30,11 @@ sudo mkdir -p /media/data_raid0/
 sudo mkdir -p /media/data_raid0/${10}_logs
 sudo mount ${NFS_IP}:/media/data_raid0/${10}_logs /media/data_raid0/${10}_logs
 
+
+# Create result directory
+TMP_DIR="/tmp_test"
+sudo mkdir -p ${TMP_DIR}
+
 cd ~/mind_ae_gam/lib/libcuckoo && autoreconf -fis && ./configure && make && sudo make install && cd ~/mind_ae_gam/src && make -j 8 && cd ~/mind_ae_gam/test && make -j 8
 
 cd ${GAM_PATH}/test/
@@ -113,3 +118,6 @@ else
 	fi
 fi
 sleep 30
+sudo cp /tmp_test/progress.txt ${LOG_DIR}/progress.$4_$1_of_$2_$3t.log
+sudo chown -R ${USER} ${LOG_DIR}
+sudo chgrp -R ${USER} ${LOG_DIR}
