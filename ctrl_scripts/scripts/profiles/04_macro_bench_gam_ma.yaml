@@ -50,20 +50,20 @@
 #    worker_port: 1234
 
 # = File download part =
-- name: collect log data (vm to server)
-  job: collect_from_vms
-  per_command_delay: 1
-  post_delay: 10
-  job_args:
-    local dir: ~/Downloads/gam/
-    target dir: Downloads/gam/04_macro_bench_ma
-
-- name: collect log data (server to local)
-  job: collect_from_server
-  per_command_delay: 1
-  post_delay: 0
-  job_args:
-    local dir: ~/Downloads/gam/
-    target dir: Downloads/gam/04_macro_bench_ma
+#- name: collect log data (vm to server)
+#  job: collect_from_vms
+#  per_command_delay: 1
+#  post_delay: 10
+#  job_args:
+#    local dir: ~/Downloads/gam/
+#    target dir: Downloads/gam/04_macro_bench_ma
+#
+#- name: collect log data (server to local)
+#  job: collect_from_server
+#  per_command_delay: 1
+#  post_delay: 0
+#  job_args:
+#    local dir: ~/Downloads/gam/
+#    target dir: Downloads/gam/04_macro_bench_ma
 
 

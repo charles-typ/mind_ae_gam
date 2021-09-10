@@ -14,7 +14,7 @@ if [ $# -le 9 ]; then
   echo "Error: missing arguments: $@"
 fi
 
-LOG_DIR=~/Downloads/04_macro_bench_$4
+LOG_DIR=~/Downloads/gam/04_macro_bench_$4
 mkdir -p $LOG_DIR
 echo "Run for Node: $1"
 source g_set_env_gam.sh
@@ -41,7 +41,7 @@ cd ~/mind_ae_gam/lib/libcuckoo && autoreconf -fis && ./configure && make && sudo
 
 cd ${GAM_PATH}/test/
 pwd
-make_cmd="./gam_profile_test"
+make_cmd="sudo ./gam_profile_test"
 echo "Make cmd: ${make_cmd}"
 
 if [[ "$4" = "ma" ]]; then
