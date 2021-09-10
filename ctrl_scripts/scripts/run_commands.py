@@ -615,6 +615,8 @@ def run_on_all_vms(cfg, job="dummy", job_args=None, verbose=True, per_command_de
                             loop, cmd, verbose, async_delay)))
                     async_delay += per_command_delay
 
+                unique_count = 0
+                number_of_vm = len(server.keys())
                 # per vm work
                 for vm in server[key_vm]:
                     cmd = None
@@ -724,22 +726,23 @@ def run_on_all_vms(cfg, job="dummy", job_args=None, verbose=True, per_command_de
                                                                            key_controller_port],
                                                                        worker_port=job_args[key_worker_port],
                                                                        trace_full_name=app_name_map[job_args[key_trace]])
+                                if unique_count == number_of_vm - 1:
+                                    for server_2 in cfg[key_ms]:
+                                        s_user_id_2, s_ssh_key_2, s_nic_2 = load_access_cfg(cfg, server_2)
+                                        # per vm work
+                                        for vm_2 in server_2[key_vm]:
+                                            # load default
+                                            script_root_2 = cfg[key_default][key_script]
+                                            if key_script in vm_2:
+                                                script_root_2 = vm_2[key_script]
+                                            v_user_id_2, v_ssh_key_2, v_nic_2 = load_access_cfg(cfg, vm_2)
 
-                                for server_2 in cfg[key_ms]:
-                                    s_user_id_2, s_ssh_key_2, s_nic_2 = load_access_cfg(cfg, server_2)
-                                    # per vm work
-                                    for vm_2 in server_2[key_vm]:
-                                        # load default
-                                        script_root_2 = cfg[key_default][key_script]
-                                        if key_script in vm_2:
-                                            script_root_2 = vm_2[key_script]
-                                        v_user_id_2, v_ssh_key_2, v_nic_2 = load_access_cfg(cfg, vm_2)
-
-                                        cmd2 = build_vm_init_mn_gam_command(server_2[key_ip], s_user_id_2, s_ssh_key_2,
-                                                                            vm_2[key_ip], v_user_id_2, v_ssh_key_2, script_root_2,
-                                                                            '10.10.10.201',
-                                                                            vm_2[key_cluster_ip], 1231,
-                                                                            1234)
+                                            unique_count = unique_count + 1
+                                            cmd2 = build_vm_init_mn_gam_command(server_2[key_ip], s_user_id_2, s_ssh_key_2,
+                                                                                vm_2[key_ip], v_user_id_2, v_ssh_key_2, script_root_2,
+                                                                                '10.10.10.201',
+                                                                                vm_2[key_cluster_ip], 1231,
+                                                                                1234)
 
                     elif job == "collect_from_vms":
                         if (job_args is not None) and (key_remote in job_args) and (key_local in job_args):
