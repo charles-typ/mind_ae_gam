@@ -37,7 +37,7 @@ sudo mount ${NFS_IP}:/media/data_raid0/${10}_logs /media/data_raid0/${10}_logs
 TMP_DIR="/tmp_test"
 sudo mkdir -p ${TMP_DIR}
 
-cd ~/mind_ae_gam/lib/libcuckoo && autoreconf -fis && ./configure && make && sudo make install && cd ~/mind_ae_gam/src && make -j 8 && cd ~/mind_ae_gam/test && make -j 8
+cd ~/mind_ae_gam/lib/libcuckoo && autoreconf -fis && ./configure && make && sudo make install && cd ~/mind_ae_gam/src && make clean && make -j 8 && cd ~/mind_ae_gam/test && make clean && make -j 8
 
 cd ${GAM_PATH}/test/
 pwd

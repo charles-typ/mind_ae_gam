@@ -616,9 +616,9 @@ def run_on_all_vms(cfg, job="dummy", job_args=None, verbose=True, per_command_de
                     async_delay += per_command_delay
 
                 unique_count = 0
-                number_of_vm = len(server.keys())
                 # per vm work
                 for vm in server[key_vm]:
+                    unique_count = unique_count + 1
                     cmd = None
                     cmd2 = None
 
@@ -726,7 +726,7 @@ def run_on_all_vms(cfg, job="dummy", job_args=None, verbose=True, per_command_de
                                                                            key_controller_port],
                                                                        worker_port=job_args[key_worker_port],
                                                                        trace_full_name=app_name_map[job_args[key_trace]])
-                                if unique_count == number_of_vm - 1:
+                                if unique_count == job_args[key_node_num] - 1:
                                     for server_2 in cfg[key_ms]:
                                         s_user_id_2, s_ssh_key_2, s_nic_2 = load_access_cfg(cfg, server_2)
                                         # per vm work
@@ -737,7 +737,6 @@ def run_on_all_vms(cfg, job="dummy", job_args=None, verbose=True, per_command_de
                                                 script_root_2 = vm_2[key_script]
                                             v_user_id_2, v_ssh_key_2, v_nic_2 = load_access_cfg(cfg, vm_2)
 
-                                            unique_count = unique_count + 1
                                             cmd2 = build_vm_init_mn_gam_command(server_2[key_ip], s_user_id_2, s_ssh_key_2,
                                                                                 vm_2[key_ip], v_user_id_2, v_ssh_key_2, script_root_2,
                                                                                 '10.10.10.201',
