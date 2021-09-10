@@ -654,9 +654,9 @@ void Cache::LinkLRU(CacheLine* cline) {
     }
   }
   if (j == sample_num) {
-    epicLog(LOG_WARNING,
-            "cannot link to any random lru list by trying %d times",
-            sample_num);
+    //epicLog(LOG_WARNING,
+    //        "cannot link to any random lru list by trying %d times",
+    //        sample_num);
     for (j = 0; j < LRU_NUM; j++) {
       i = j;
       if (lru_locks_[i].try_lock()) {
