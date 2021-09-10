@@ -16,10 +16,10 @@
   per_command_delay: 1
   post_delay: 10
 
-- name: initialize VMs
-  job: init_cn_gam
-  per_command_delay: 10
-  post_delay: 20
+  #- name: initialize VMs
+  #  job: init_cn_gam
+  #  per_command_delay: 10
+  #  post_delay: 20
 
 
 # = Run test =
