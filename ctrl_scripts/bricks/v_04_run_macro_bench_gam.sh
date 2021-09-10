@@ -37,7 +37,7 @@ pwd
 make_cmd="./gam_profile_test"
 echo "Make cmd: ${make_cmd}"
 
-if [[ "$4" = "ma" ]] then
+if [[ "$4" = "ma" ]]; then
 	if [[ $1 -eq 0 ]]; then
 	  echo $make_cmd $2 $3 $6 $7 $8 $9 1 1 $5 /test_program_log/${4}/0 /test_program_log/${4}/1 /test_program_log/${4}/2 /test_program_log/${4}/3 /test_program_log/${4}/4 /test_program_log/${4}/5 /test_program_log/${4}/6 /test_program_log/${4}/7 /test_program_log/${4}/8 /test_program_log/${4}/9_0
 	  $make_cmd $2 $3 $6 $7 $8 $9 1 1 $5 /test_program_log/${4}/0 /test_program_log/${4}/1 /test_program_log/${4}/2 /test_program_log/${4}/3 /test_program_log/${4}/4 /test_program_log/${4}/5 /test_program_log/${4}/6 /test_program_log/${4}/7 /test_program_log/${4}/8 /test_program_log/${4}/9_0 &> result.log &
