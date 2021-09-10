@@ -1,11 +1,5 @@
 # Profile for tasks/commands in order
 
-# = Prepare normal switch program =
-- name: setup normal switch
-  job: normal_switch
-  per_command_delay: 1
-  post_delay: 120
-
 # = Prepare cluster =
 - name: start VMs
   job: setup
