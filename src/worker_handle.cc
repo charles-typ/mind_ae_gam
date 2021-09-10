@@ -262,21 +262,21 @@ void WorkerHandle::CollectCacheStatistics() {
 }
 
 void WorkerHandle::CollectEvictStatistics(int thread_num, int pass_num) {
-  fprintf(stdout, "Eviction: thread: %d pass: %d count: %lld\n", thread_num, pass_num, worker->num_evict_.load());
+  //fprintf(stdout, "Eviction: thread: %d pass: %d count: %lld\n", thread_num, pass_num, worker->num_evict_.load());
 }
 
 void WorkerHandle::CollectInvalidStatistics(int thread_num, int pass_num) {
-  fprintf(stdout, "Invalidation: thread: %d pass: %d count: %lld\n", thread_num, pass_num, worker->num_invalid_.load());
+  //fprintf(stdout, "Invalidation: thread: %d pass: %d count: %lld\n", thread_num, pass_num, worker->num_invalid_.load());
 }
 
 void WorkerHandle::CollectRemoteStatistics(int thread_num, int pass_num) {
-  fprintf(stdout, "Remote request send: thread: %d pass: %d count: %lld\n", thread_num, pass_num, worker->num_request_send_.load());
+  //fprintf(stdout, "Remote request send: thread: %d pass: %d count: %lld\n", thread_num, pass_num, worker->num_request_send_.load());
 }
 
 void WorkerHandle::CollectNetworkCdf(int thread_num, int pass_num) {
-  int i = 0;
-  for (i = 0; i < CDF_BUCKET_NUM; i++)
-    printf("CDF Network: thread: %d pass: %d count: %lu\n", thread_num, pass_num, worker->cdf_cnt_network[i].load());
+  //int i = 0;
+  //for (i = 0; i < CDF_BUCKET_NUM; i++)
+  //  printf("CDF Network: thread: %d pass: %d count: %lu\n", thread_num, pass_num, worker->cdf_cnt_network[i].load());
 }
 
 void WorkerHandle::CollectEvictCdf(int thread_num, int pass_num) {
@@ -284,11 +284,11 @@ void WorkerHandle::CollectEvictCdf(int thread_num, int pass_num) {
 }
 
 void WorkerHandle::CollectLocalRemoteCdf(int thread_num, int pass_num) {
-  int i = 0;
-  for (i = 0; i < CDF_BUCKET_NUM; i++)
-    printf("CDF LOCAL: thread: %d pass: %d count: %lu\n", thread_num, pass_num, worker->cdf_cnt_local[i].load());
-  for (i = 0; i < CDF_BUCKET_NUM; i++)
-    printf("CDF REMOTE: thread: %d pass: %d count: %lu\n", thread_num, pass_num, worker->cdf_cnt_remote[i].load());
+  //int i = 0;
+  //for (i = 0; i < CDF_BUCKET_NUM; i++)
+  //  printf("CDF LOCAL: thread: %d pass: %d count: %lu\n", thread_num, pass_num, worker->cdf_cnt_local[i].load());
+  //for (i = 0; i < CDF_BUCKET_NUM; i++)
+  //  printf("CDF REMOTE: thread: %d pass: %d count: %lu\n", thread_num, pass_num, worker->cdf_cnt_remote[i].load());
 }
 
 void WorkerHandle::ResetCacheStatistics() {

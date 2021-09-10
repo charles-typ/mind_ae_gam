@@ -19,6 +19,8 @@ mkdir -p $LOG_DIR
 echo "Run for Node: $1"
 source g_set_env_gam.sh
 
+sudo pkill gam
+
 NFS_IP="192.168.122.1"
 echo $NFS_IP
 
@@ -29,6 +31,11 @@ sudo mount ${NFS_IP}:/media/data_ssds/${10}_logs /test_program_log/${4}
 sudo mkdir -p /media/data_raid0/
 sudo mkdir -p /media/data_raid0/${10}_logs
 sudo mount ${NFS_IP}:/media/data_raid0/${10}_logs /media/data_raid0/${10}_logs
+
+
+# Create result directory
+TMP_DIR="/tmp_test"
+sudo mkdir -p ${TMP_DIR}
 
 cd ~/mind_ae_gam/lib/libcuckoo && autoreconf -fis && ./configure && make && sudo make install && cd ~/mind_ae_gam/src && make -j 8 && cd ~/mind_ae_gam/test && make -j 8
 
@@ -113,3 +120,6 @@ else
 	fi
 fi
 sleep 30
+sudo cp /tmp_test/progress.txt ${LOG_DIR}/progress.$4_$1_of_$2_$3t.log
+sudo chown -R ${USER} ${LOG_DIR}
+sudo chgrp -R ${USER} ${LOG_DIR}

@@ -385,9 +385,9 @@ class Cache {
     return num_request_send.load();
   }
   void CollectEvictCdf(int thread_num, int pass_num) {
-    int i = 0;
-    for (i = 0; i < CDF_BUCKET_NUM; i++)
-      printf("CDF Evict: thread: %d pass: %d count: %lu\n", thread_num, pass_num, cdf_cnt_evict[i].load());
+    //int i = 0;
+    //for (i = 0; i < CDF_BUCKET_NUM; i++)
+    //  printf("CDF Evict: thread: %d pass: %d count: %lu\n", thread_num, pass_num, cdf_cnt_evict[i].load());
   }
 };
 

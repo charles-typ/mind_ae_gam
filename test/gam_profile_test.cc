@@ -318,18 +318,18 @@ void do_log(void *arg) {
     alloc->WLock(remote[0], BLOCK_SIZE * resize_ratio);
     alloc->UnLock(remote[0], BLOCK_SIZE * resize_ratio);
     long pass_end = get_time();
-    printf("done in %ld ns, thread: %d, pass: %d\n", pass_end - pass_start, trace->tid, trace->pass);
+    //printf("done in %ld ns, thread: %d, pass: %d\n", pass_end - pass_start, trace->tid, trace->pass);
     trace->time += pass_end - pass_start;
     //trace->total_fence += pass_end - fence_start;
     //printf("total run time is %ld ns, fence_time is %ld, sleep time is %ld, thread: %d, pass: %d\n", trace->time, trace->total_fence, trace->total_interval, trace->tid, trace->pass);
-    printf("total run time is %ld ns, thread: %d, pass: %d\n", trace->time, trace->tid, trace->pass);
+    //printf("total run time is %ld ns, thread: %d, pass: %d\n", trace->time, trace->tid, trace->pass);
     if(trace->pass % 1000 == 0) {
 #ifdef PROFILE_LATENCY
       if(trace->tid == 0) {
         alloc->CollectCacheStatistics();
       }
 #endif
-      printf("thread: %d Number of read: %lld write: %lld control: %lld\n", trace->tid, trace->read_ops, trace->write_ops, trace->control_ops);
+      //printf("thread: %d Number of read: %lld write: %lld control: %lld\n", trace->tid, trace->read_ops, trace->write_ops, trace->control_ops);
 
 #ifdef COLLECT_CDF
       for (i = 0; i < CDF_BUCKET_NUM; i++)
@@ -355,7 +355,7 @@ void do_log(void *arg) {
     //  printf("total read time is %ld ns, thread: %d, pass: %d\n", trace->read_time, trace->tid, trace->pass);
     //if(trace->write_ops)
     //  printf("total write time is %ld ns, thread: %d, pass: %d\n", trace->write_time, trace->tid, trace->pass);
-    fflush(stdout);
+    //fflush(stdout);
     //trace->write_time = 0;
     //trace->read_time = 0;
     //trace->read_ops = 0;
@@ -379,7 +379,7 @@ void do_log(void *arg) {
     }
   }
   long sync_end = get_time();
-  printf("All nodes synced in %ld ns\n", sync_end - sync_start);
+  //printf("All nodes synced in %ld ns\n", sync_end - sync_start);
 
 }
 
@@ -446,7 +446,7 @@ int load_trace(int fd, struct trace_t *arg, unsigned long ts_limit) {
   assert(size <= LOG_NUM_TOTAL * sizeof(RWlog));
   //assert(size % sizeof(RWlog) == 0);
   arg->len = size / (sizeof(RWlog));
-  printf("finish loading %lu logs\n", arg->len);
+  //printf("finish loading %lu logs\n", arg->len);
 
   return 0;
 }
@@ -576,6 +576,7 @@ int main(int argc, char **argv) {
   }
   fflush(stdout);
   //open files
+  FILE *progress = fopen("/tmp_test/progress.txt", "w");
   if(is_compute) {
     int *fd = new int[num_threads];
     for (int i = 0; i < num_threads; ++i) {
@@ -663,12 +664,13 @@ int main(int argc, char **argv) {
     //    printf("fail to load trace\n");
     //  }
     //}
+    unsigned long tot_run_time = 0;
     while (1) {
       ts_limit += TIMEWINDOW_US;
 
-      printf("Pass[%lu] Node[%d]: loading log...\n", pass, node_id);
+      //printf("Pass[%lu] Node[%d]: loading log...\n", pass, node_id);
       for (int i = 0; i < num_threads; ++i) {
-        printf("Thread[%d]: loading log...\n", i);
+        //printf("Thread[%d]: loading log...\n", i);
         ret = load_trace(fd[i], &args[i], ts_limit);
         if (ret) {
           printf("fail to load trace\n");
@@ -676,11 +678,11 @@ int main(int argc, char **argv) {
       }
 
       pthread_t thread[MAX_NUM_THREAD];
-      printf("running trace...\n");
+      //printf("running trace...\n");
 
       for (int i = 0; i < num_threads; ++i) {
         args[i].pass = pass;
-        printf("args has len: %d\n", args[i].len);
+        //printf("args has len: %d\n", args[i].len);
         if (args[i].len) {
           if (pthread_create(&thread[i], NULL, (void *(*)(void *)) do_log, &args[i])) {
             printf("Error creating thread %d\n", i);
@@ -700,6 +702,26 @@ int main(int argc, char **argv) {
 
       //sync on the end of the time window
       ++pass;
+      unsigned long longest_time = 0;
+      for (int i = 0; i < num_threads; ++i) {
+        if(args[i].time > longest_time) {
+            longest_time = args[i].time;
+        }
+       }
+      tot_run_time += longest_time;
+      if (pass % 1000 == 0) {
+      	char progress_text[256] = "";
+      	memset(progress_text, 0, 256);
+        sprintf(progress_text, "Pass[%lu] Node[0] || Time [%lu] ||  ", pass, longest_time);
+        for (int i = 0; i < num_threads; ++i) {
+      	    sprintf(progress_text, "%s %lu, ", progress_text, args[i].time);
+      	}
+        fprintf(progress, "%s in us\n", progress_text);
+        fflush(progress);
+        printf("%s in us\n", progress_text);
+        fflush(stdout);
+      }
+
 
       bool all_done = true;
       for (int i = 0; i < num_threads; ++i) {
@@ -734,6 +756,7 @@ int main(int argc, char **argv) {
     }
 
   }
+  fclose(progress);
 
   return 0;
 }
