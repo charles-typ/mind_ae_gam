@@ -89,7 +89,6 @@ To compute the final number of the result, please run
 cd post_processing && ./04macro_bench_gam_res.sh && cd ..
 ```
 - This script scan will scan through the directories for all the applications and number of compute blades and calculate normalized computing speed.
-  - The value is calculated by (total amount of task / processing time): [actual code](https://github.com/charles-typ/mind_ae_gam/blob/master/ctrl_scripts/scripts/post_processing/04macro_bench_gam.py)
 
 We can also test traces from other applications, for example
 ```bash
