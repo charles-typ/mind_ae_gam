@@ -1,6 +1,6 @@
 # Overview
  
- This is the evaluation repo for MIND against mind. 
+ This is the evaluation repo for GAM against mind. 
  
  We made several modifications to the [original GAM repo](https://github.com/ooibc88/gam), including fixing bugs and implementing memory trace applications.
  
