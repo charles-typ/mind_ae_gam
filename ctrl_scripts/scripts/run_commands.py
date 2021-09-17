@@ -541,6 +541,7 @@ def run_on_all_vms(cfg, job="dummy", job_args=None, verbose=True, per_command_de
                         async_delay += per_command_delay
 
         # for compute servers
+        unique_count = 0
         if key_cs in cfg:
             for server in cfg[key_cs]:
                 s_user_id, s_ssh_key, s_nic = load_access_cfg(cfg, server)
@@ -615,7 +616,6 @@ def run_on_all_vms(cfg, job="dummy", job_args=None, verbose=True, per_command_de
                             loop, cmd, verbose, async_delay)))
                     async_delay += per_command_delay
 
-                unique_count = 0
                 # per vm work
                 for vm in server[key_vm]:
                     unique_count = unique_count + 1
