@@ -59,10 +59,10 @@ python3 run_commands.py --profile=profiles/05_load_trace_tf.yaml
 
 After the script for loading traces is finished, we can run the following command to run an experiment with the TensorFlow memory traces we just loaded:
 ```bash
-python3 run_commands.py --profile profiles/04_macro_bench_tf.yaml
+python3 run_commands.py --profile profiles/04_macro_bench_gam_tf.yaml
 ```
 - By default, it will run only 1/10 of the total traces (i.e., 5k steps of total 50k steps) with 2 compute blades; it will take 10 ~ 20 minutes.
-  - Please modify the values in `profiles/04_macro_bench_tf.yaml` to change number of blades, threads and steps.
+  - Please modify the values in `profiles/04_macro_bench_gam_tf.yaml` to change number of blades, threads and steps.
   - Tag for the application or [APP]
     - [APP]: `tf` for TensorFlow, `gc` for GraphChi, `ma` / `mc` for Memcached with YCSB workloadA/workloadC
   - Number of total steps we used in the paper are
@@ -82,7 +82,7 @@ python3 run_commands.py --profile profiles/04_macro_bench_tf.yaml
         worker_port: 1234 # Default GAM worker port (No need to modify)
     ```
 ## Please be careful "node num" in gam experiments represent the total number of VMs in the system (# compute + # memory). This is different from the MIND configuration.
-The result of the experiment will be downloaded at `~/Downloads/04_macro_bench_gam_[APP]`
+The result of the experiment will be downloaded at `~/Downloads/gam/04_macro_bench_gam_[APP]`
 
 
 To compute the final number of the result, please run
