@@ -25,7 +25,7 @@
 # = Run test =
 - name: run macro benchmark GAM
   job: macro_bench_gam
-  per_command_delay: 10
+  per_command_delay: 60
   post_delay: 0
   job_args:
     trace: ma
