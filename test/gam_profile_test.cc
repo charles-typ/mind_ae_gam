@@ -491,10 +491,10 @@ int main(int argc, char **argv) {
   printf("%ld %d %d %d\n", benchmark_size, num_comp_nodes, is_master, is_compute);
   printf("Num Nodes: %d, Num Threads: %d\n", num_nodes, num_threads);
 #ifndef single_thread_test
-  if (argc != arg_log1 + num_threads) {
-    fprintf(stderr, "thread number and log files provided not match\n");
-    return 1;
-  }
+  //if (argc != arg_log1 + num_threads) {
+  //  fprintf(stderr, "thread number and log files provided not match\n");
+  //  return 1;
+  //}
 #endif
   /**
    *	struct Conf {
