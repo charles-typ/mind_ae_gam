@@ -712,7 +712,7 @@ int main(int argc, char **argv) {
       if (pass % 1000 == 0) {
       	char progress_text[256] = "";
       	memset(progress_text, 0, 256);
-        sprintf(progress_text, "Pass[%lu] Node[0] || Time [%lu] ||  ", pass, longest_time / 1000);
+        sprintf(progress_text, "Pass[%lu] Node[%d] || Time [%lu] ||  ", pass, args[i].node_idx - 1, longest_time / 1000);
         for (int i = 0; i < num_threads; ++i) {
       	    sprintf(progress_text, "%s %lu, ", progress_text, args[i].time / 1000);
       	}
