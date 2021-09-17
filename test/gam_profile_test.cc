@@ -735,7 +735,7 @@ int main(int argc, char **argv) {
       }
     }
     //printf("Putting %lld, %lld\n", SYNC_KEY + node_id + 10, node_id);
-    alloc->Put(SYNC_KEY + node_id + 10, &node_id, sizeof(int));
+    //alloc->Put(SYNC_KEY + node_id + 10, &node_id, sizeof(int));
     sleep(20);
     //printf("Put done\n");
 
