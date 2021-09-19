@@ -56,7 +56,7 @@ if __name__ == '__main__':
             max_val = max(res_time_list[key][key_th]['time'])
             if max_val > 0:
                 # total amount of work / time = number of blades * number of passes per blade / maximum time among blades
-                norm_val = str((float(key) - 1) * float(res_time_list[key][key_th]['pass'][0]) * float(key_th) / 10. / max_val)
+                norm_val = str(float(key) * float(res_time_list[key][key_th]['pass'][0]) * float(key_th) / 10. / max_val)
                 print(bcolors.OKGREEN + "Normalized Max for #blade[" + str(key) + "], #thread[" + str(key_th) + "]: "
                       + norm_val + bcolors.ENDC)
             else:
