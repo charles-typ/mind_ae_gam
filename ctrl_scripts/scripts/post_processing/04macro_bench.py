@@ -28,7 +28,7 @@ if __name__ == '__main__':
             continue
         fname_split = fname.split('_')
         node_idx = fname_split[1]
-        node_num = fname_split[3]
+        node_num = str(int(fname_split[3]) - 1)
         thread_num = fname_split[4].split('.')[0][:-1]
         if node_num not in res_time_list:
             res_time_list[node_num] = {}
